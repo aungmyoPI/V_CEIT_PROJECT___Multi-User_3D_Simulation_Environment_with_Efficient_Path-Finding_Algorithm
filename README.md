@@ -67,4 +67,3 @@ cmake -B build -G Ninja && ninja -C build && ./build/V_Project.exe
 * **Release Mouse Cursor:** Hold `Left Alt`
 
 * **Exit Game:** `Esc`
-# V_CEIT_PROJECT___Multi-User_3D_Simulation_Environment_with_Efficient_Path-Finding_Algorithm
