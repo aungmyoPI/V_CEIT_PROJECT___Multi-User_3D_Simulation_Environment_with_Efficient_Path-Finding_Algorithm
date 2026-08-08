@@ -1,0 +1,10 @@
+# Ignore local cache and build outputs
+.cache/
+build/
+
+# Ignore local configuration files
+imgui.ini
+compile_commands.json
+
+# Optional: Ignore assets if they are too large
+# assets/
