@@ -1,6 +1,6 @@
 # 🧪 3D Simulation & Interaction Framework
 
-**A high-performance, custom-built 3D simulation framework** written in C++17 and OpenGL 3.3 Core Profile. Developed as a research platform for multi-agent interaction, it features a fully custom **deferred shading pipeline**, **instanced rendering** (1M+ grass blades with distance culling), **skeletal animation** blending, **A\* pathfinding** with static-memory optimization, and an **asynchronous client-server save system** using Winsock2 and MongoDB.
+**A high-performance, custom-built 3D simulation framework** written in C++17 and OpenGL 3.3 Core Profile. Developed as a research platform for multi-agent interaction, it features a fully custom **deferred shading pipeline**, **instanced rendering** (1M+ grass blades with distance culling), **skeletal animation**, **A\* pathfinding** with static-memory optimization, and an **asynchronous client-server save system** using Winsock2 and MongoDB.
 
 > **Note:** While it utilizes game-like assets (RPG characters, trees), this project is fundamentally a **graphics and AI engineering testbed** focused on rendering optimization, real-time pathfinding, and network persistence.
 
