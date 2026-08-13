@@ -9,7 +9,7 @@
 ## ✨ Features
 
 - **Deferred Lighting Pipeline** – G-buffer rendering pass processing world positions, normals, albedo, and specular parameters alongside dynamic point light support.
-- **Skeletal Animation System** – Real-time character skeletal animation blending for idle, running, attacking, and special abilities.
+- **Skeletal Animation System** – Real-time character skeletal animation for idle, running, attacking, and special abilities.
 - **A\* Pathfinding AI** – Grid-based A* navigation enabling aggressive AI agents to track players around forest obstacles dynamically.
 - **Instanced Rendering** – High-density vegetation rendering capable of drawing millions of grass blades and forest trees efficiently.
 - **Integrated Authentication & State Persistence** – ImGui-powered login and registration windows with asynchronous background state persistence to MongoDB.
