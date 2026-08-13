@@ -30,12 +30,10 @@ public:
 			auto animation = scene->mAnimations[0];
 			m_Duration = animation->mDuration;
 
-			// --- ADD THIS BLOCK HERE ---
 			m_TicksPerSecond = animation->mTicksPerSecond;
 			if (m_TicksPerSecond <= 0) {
-				m_TicksPerSecond = 25.0f; // Default fallback convention for Mixamo/DAE files
+				m_TicksPerSecond = 25.0f;
 			}
-			// ---------------------------
 
 			aiMatrix4x4 globalTransformation = scene->mRootNode->mTransformation;
 			globalTransformation = globalTransformation.Inverse();

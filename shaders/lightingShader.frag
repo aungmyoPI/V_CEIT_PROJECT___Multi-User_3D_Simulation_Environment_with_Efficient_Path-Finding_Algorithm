@@ -90,7 +90,7 @@ void main() {
     float distanceToCamera = length(viewPos - FragPos);
 
     // Controls how thick the fog gets over distance
-    float fogDensity = 0.025;
+    float fogDensity = 0.018;
 
     // Exponential squared fog factor: 0.0 = fully fogged, 1.0 = fully clear
     float fogFactor = exp(-pow(distanceToCamera * fogDensity, 2.0));

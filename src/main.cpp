@@ -49,7 +49,7 @@ const float project_max = 100.0f;
 
 const unsigned int TREE_AMOUNT = 200;
 const unsigned int GRASS_AMOUNT = 1000000;
-const unsigned int MUTANT_AMOUNT = 50;
+const unsigned int MUTANT_AMOUNT = 35;
 
 const int GRID_SIZE = 60;
 const float CELL_SIZE = WORLD_SIZE_X / GRID_SIZE;
@@ -153,7 +153,7 @@ glm::vec3 playerPos = glm::vec3(0.0f);
 float playerSpeed = 8.0f;
 int playerHp = 100;
 int playerMaxHp = 100;
-int playerAtk = 5;
+int playerAtk = 15;
 int playerScore = 0;
 
 PlayerState currentState = IDLE;
@@ -702,7 +702,7 @@ GLFWwindow* InitWindow() {
     }
 
     glfwMakeContextCurrent(window);
-    glfwSwapInterval(0);
+    glfwSwapInterval(1);
     glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
     glfwSetCursorPosCallback(window, mouse_callback);
     glfwSetScrollCallback(window, scroll_callback);
@@ -877,7 +877,9 @@ std::vector<glm::vec3> FindAStarPath(glm::vec3 startPos, glm::vec3 targetPos) {
     open.push(&nodePool[s.y][s.x]);
     openSet[s.y][s.x] = true;
 
-    int dx[4] = { 1, -1, 0, 0 }, dz[4] = { 0, 0, 1, -1 };
+    int dx[4] = { 1, -1, 0, 0 };
+    int dz[4] = { 0, 0, 1, -1 };
+
     PathNode* targetNode = nullptr;
 
     while (!open.empty()) {
