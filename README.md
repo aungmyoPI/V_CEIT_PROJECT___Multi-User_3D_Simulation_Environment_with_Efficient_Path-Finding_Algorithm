@@ -39,13 +39,63 @@ Ensure you have the following installed before building:
 - **Compiler**: MSVC (Visual Studio 2019+), GCC 9+, or Clang 10+ with C++17 support.
 - **CMake**: Version 3.15 or higher.
 - **Ninja Build System**: Recommended for fast, parallel builds.
-- **Git**: Required for CMake FetchContent to download dependencies automatically (GLFW, Assimp, ImGui).
+- **Git**: Required for CMake FetchContent to download dependencies automatically.
 
 ---
 
-## 🚀 Quick Start (Building & Running)
+## 🚀 Quick Start
 
-Clone the repository and run the single build command:
+Clone the repository and run:
 
 ```bash
-cmake -B build -G Ninja && ninja -C build && ./build/V_Project.exe
+cmake -B build -G Ninja
+ninja -C build
+./build/V_Project.exe
+```
+
+> **Note:** The initial CMake configuration downloads external dependencies via `FetchContent` (e.g., Assimp, GLFW, and ImGui). Subsequent builds will be significantly faster.
+
+---
+
+## 🎮 Controls
+
+| Action | Key |
+|--------|-----|
+| Movement | W / A / S / D |
+| Basic Attack | Left Mouse Button |
+| Skill Ability | E |
+| Ultimate Ability | Q |
+| Release Mouse Cursor | Left Alt |
+| Exit Game | Esc |
+
+---
+
+## 📁 Project Structure
+
+```text
+assets/          # 3D models, textures, animations
+include/         # Header files
+shaders/         # GLSL vertex/fragment shaders
+src/             # Source files
+lib/             # External libraries
+CMakeLists.txt   # Build configuration
+README.md        # Project documentation
+```
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License – see the `LICENSE` file for details.
+
+---
+
+## 👨‍💻 Author
+
+**Aung Myo Pai**
+
+GitHub: https://github.com/aungmyoPI
+
+---
+
+*Built as part of the CEIT Project at Technological University (Mandalay).*
