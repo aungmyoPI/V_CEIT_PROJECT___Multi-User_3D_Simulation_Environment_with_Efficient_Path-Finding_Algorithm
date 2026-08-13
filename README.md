@@ -98,7 +98,7 @@ This project is licensed under the MIT License – see the `LICENSE` file for de
 
 | Name | Role | Primary Contribution |
 |------|------|----------------------|
-| **Mg Aung Myo Pai** | **Lead Developer & System Integrator** | Core Engine, Deferred Rendering Pipeline, Instancing, Skeletal Animation, System Integration, Cross-module Debugging |
+| **Mg Aung Myo Pai** | **Lead Developer & System Integrator** | **Core Engine, Deferred Rendering Pipeline, Instancing, Skeletal Animation, System Integration, Cross-module Debugging** |
 | Ma Khin Yadanar Win | Developer | Networking & Database Module (TCP Server, MongoDB Integration) |
 | Mg Hlwan Moe Aung | Developer | A* Pathfinding Algorithm Development |
 | Ma Thoon Thiri Swe | Developer | Finite State Machine (FSM) Logic Design |
