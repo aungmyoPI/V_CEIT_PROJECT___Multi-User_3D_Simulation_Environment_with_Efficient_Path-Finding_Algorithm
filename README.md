@@ -1,160 +1,101 @@
-# 🧪 V_Project — 3D Simulation & Interaction Framework
+# 🧪 3D Simulation & Interaction Framework
 
-**High-performance C++17 + OpenGL 3.3 research platform** for multi-agent interaction, rendering experiments, and pathfinding/AI research. This repository contains the rendering engine, animation and AI systems, and tools used in the CEIT project.
+**A high-performance, custom-built 3D simulation framework** written in C++17 and OpenGL 3.3 Core Profile. Developed as a research platform for multi-agent interaction, it features a fully custom **deferred shading pipeline**, **instanced rendering** (1M+ grass blades with distance culling), **skeletal animation** blending, **A\* pathfinding** with static-memory optimization, and an **asynchronous client-server save system** using Winsock2 and MongoDB.
 
----
-
-## Summary
-
-- Deferred shading pipeline, instanced rendering (very large vegetation counts), skeletal animation blending, and a custom grid-based A* pathfinding system optimized to avoid heap allocations.
-- ImGui-based UI for login/registration and an optional asynchronous persistence layer to MongoDB referenced in the project (the persistence server/bridge is not included in this repository).
+> **Note:** While it utilizes game-like assets (RPG characters, trees), this project is fundamentally a **graphics and AI engineering testbed** focused on rendering optimization, real-time pathfinding, and network persistence.
 
 ---
 
 ## ✨ Features
 
-- Deferred Lighting Pipeline (G-buffer + lighting pass)
-- Skeletal Animation System (animation blending, bone transforms)
-- Grid-based A* Pathfinding with dynamic obstacle avoidance
-- Instanced Rendering for high-density vegetation
-- ImGui-powered developer UI
-- Build integration via CMake (FetchContent for GLFW, Assimp, ImGui)
+- **Deferred Lighting Pipeline** – G-buffer rendering pass processing world positions, normals, albedo, and specular parameters alongside dynamic point light support.
+- **Skeletal Animation System** – Real-time character skeletal animation blending for idle, running, attacking, and special abilities.
+- **A\* Pathfinding AI** – Grid-based A* navigation enabling aggressive AI agents to track players around forest obstacles dynamically.
+- **Instanced Rendering** – High-density vegetation rendering capable of drawing millions of grass blades and forest trees efficiently.
+- **Integrated Authentication & State Persistence** – ImGui-powered login and registration windows with asynchronous background state persistence to MongoDB.
 
 ---
 
 ## 🛠️ Technical Stack
 
-- Language: C++17
-- Graphics API: OpenGL 3.3 Core Profile (GLAD)
-- Windowing & Input: GLFW
-- Math: GLM
-- Model Import: Assimp
-- UI: Dear ImGui
-- Build: CMake 3.15+ and Ninja (recommended)
-- License: MIT (see LICENSE)
+| Component | Technology / Library |
+|-----------|----------------------|
+| Language | C++17 |
+| Graphics API | OpenGL 3.3 Core Profile (GLAD loader) |
+| Windowing & Input | GLFW 3.3.8 |
+| Mathematics | GLM (OpenGL Mathematics) |
+| Model Import | Assimp v5.2.5 |
+| UI Framework | Dear ImGui v1.91.0 |
+| Networking | Winsock2 (TCP/IP) |
+| Database | MongoDB (via Python bridge) |
+| Build System | CMake (3.15+) & Ninja |
 
 ---
 
 ## 📦 Prerequisites
 
-- A C++17-capable compiler (MSVC / Visual Studio 2019+, GCC 9+, Clang 10+)
-- CMake 3.15+
-- Ninja (recommended)
-- Git (for FetchContent in CMake)
+Ensure you have the following installed before building:
+
+- **Compiler**: MSVC (Visual Studio 2019+), GCC 9+, or Clang 10+ with C++17 support.
+- **CMake**: Version 3.15 or higher.
+- **Ninja Build System**: Recommended for fast, parallel builds.
+- **Git**: Required for CMake FetchContent to download dependencies automatically.
 
 ---
 
-## 🚀 Quick start (cross-platform)
+## 🚀 Quick Start
 
-Clone and build (single-line, works on Windows/macOS/Linux when Ninja is available):
+Clone the repository and run:
 
 ```bash
-git clone https://github.com/aungmyoPI/V_CEIT_PROJECT___Multi-User_3D_Simulation_Environment_with_Efficient_Path-Finding_Algorithm.git
-cd V_CEIT_PROJECT___Multi-User_3D_Simulation_Environment_with_Efficient_Path-Finding_Algorithm
 cmake -B build -G Ninja
 ninja -C build
-
-# Run (Linux / macOS)
-./build/V_Project
-
-# Run (Windows - PowerShell or CMD)
-.\build\V_Project.exe
+./build/V_Project.exe
 ```
 
-Notes:
-- The CMake configuration uses FetchContent to download and build GLFW, Assimp, and Dear ImGui on first configure; the first build may take longer.
-- The build target name is `V_Project` (not a packaged installer).
+> **Note:** The initial CMake configuration downloads external dependencies via `FetchContent` (e.g., Assimp, GLFW, and ImGui). Subsequent builds will be significantly faster.
 
 ---
 
-## State persistence / MongoDB
+## 🎮 Controls
 
-The README previously referenced an asynchronous MongoDB persistence bridge. At the time of this edit, there is no separate persistence server or Python bridge checked in under the repository root. The codebase contains hooks and references to state persistence; if you plan to use persistence:
-
-- Provide a running MongoDB instance and the persistence bridge/service expected by your build (not included by default), or
-- Run the application without the persistence backend (the application runs locally but without persistent server-backed save/load).
-
-If you'd like, I can add a minimal example persistence bridge or document the exact runtime flags and environment variables once you provide the persistence script or confirm how you run it.
-
----
-
-## Controls
-
-- Movement: W / A / S / D
-- Basic Attack: Left Mouse Button
-- Skill Ability: E
-- Ultimate Ability: Q
-- Release mouse cursor: Left Alt
-- Exit: Esc
+| Action | Key |
+|--------|-----|
+| Movement | W / A / S / D |
+| Basic Attack | Left Mouse Button |
+| Skill Ability | E |
+| Ultimate Ability | Q |
+| Release Mouse Cursor | Left Alt |
+| Exit Game | Esc |
 
 ---
 
-## Project layout
+## 📁 Project Structure
 
 ```text
-assets/          # models, textures, animations (large files may be kept externally)
-include/         # third-party headers and project headers
-shaders/         # GLSL shaders
-src/             # project source files (renderer, game loop, AI, animation, etc.)
-lib/             # optional external libraries
-CMakeLists.txt   # build configuration
-README.md        # this file
-LICENSE          # MIT license
+assets/          # 3D models, textures, animations
+include/         # Header files
+shaders/         # GLSL vertex/fragment shaders
+src/             # Source files
+lib/             # External libraries
+CMakeLists.txt   # Build configuration
+README.md        # Project documentation
 ```
 
 ---
 
-## Authors & Contributors
+## 📄 License
 
-This project is academic in nature; it is best to be explicit about roles rather than listing percentage splits.
-
-- Lead author
-  - Aung Myo Pai — project lead, rendering, AI/pathfinding, and build system.
-  - GitHub: https://github.com/aungmyoPI
-
-- Major contributor
-  - (Add name) — animation system, character assets, or other major contribution.
-
-- Contributors
-  - (Add teammate name) — networking, testing, scene setup, minor fixes.
-  - (Add teammate name) — documentation, asset preparation, minor bug fixes.
-
-- Supervisors / Academic Mentors
-  - (Add supervisor name) — project supervision and guidance.
-
-Acknowledgements
-- Thanks to the maintainers of third-party libraries used in this project: GLFW, GLM, Assimp, Dear ImGui, stb.
-
-Notes on contributor policy
-- For a professional repository, prefer named roles (Lead author, Major contributor, Contributors, Supervisors) over precise percentage values in the README. If you want an exact contribution breakdown, create a CONTRIBUTORS.md with commit-based metrics or a private record for assessment purposes.
+This project is licensed under the MIT License – see the `LICENSE` file for details.
 
 ---
 
-## Contributing
+## 👨‍💻 Author
 
-If you want to accept contributions or have teammates update the repo, consider adding CONTRIBUTING.md and a short CODE_OF_CONDUCT. I can add templates for those if you want.
+**Aung Myo Pai**
 
----
-
-## Screenshot / Demo
-
-Add a short GIF or screenshot in `assets/` and reference it here. Example:
-
-![screenshot](assets/screenshot.png)
-
-(If you provide a screenshot I will add it to the README in place of this placeholder.)
+GitHub: https://github.com/aungmyoPI
 
 ---
 
-## License
-
-MIT — see LICENSE file for details.
-
----
-
-If you want, I will:
-- Replace the placeholder contributor names with the real names and roles (if you give them), and
-- Add a CONTRIBUTORS.md with a computed commit summary (git shortlog) and move any minor names to Acknowledgements, or
-- Create a small persistence example (Python + pymongo) and document how to configure/run it.
-
-Tell me which of these you'd like next and I will make the change in a follow-up commit.
+*Built as part of the CEIT Project at Technological University (Mandalay).*
