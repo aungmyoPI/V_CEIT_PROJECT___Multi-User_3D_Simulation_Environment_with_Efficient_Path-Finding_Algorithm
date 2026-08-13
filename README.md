@@ -99,7 +99,7 @@ This project is licensed under the MIT License – see the `LICENSE` file for de
 | Mg Hlwan Moe Aung | Developer | A* Pathfinding Algorithm Development |
 | Ma Thoon Thiri Swe | Developer | Finite State Machine (FSM) Logic Design |
 | Mg Nay Phone Myint | *Contributor* | Documentation & Testing Support |
-| Mg Kaung Khant Ko Ko | *Contributor* | Asset Management Support |
+| Mg Kaung Khant Ko Ko | *Contributor* | Documentation & Testing Support |
 
 **Supervised by:** Dr. Thandar Soe, Professor, Department of Computer Engineering and Information Technology, Technological University (Mandalay)
 
