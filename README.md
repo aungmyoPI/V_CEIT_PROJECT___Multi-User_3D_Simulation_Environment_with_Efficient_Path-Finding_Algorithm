@@ -70,6 +70,10 @@ ninja -C build
 
 ---
 
+> **Note:** You can use dev acc for easy access to the project. [username : dev, password : dev]
+
+---
+
 ## 📁 Project Structure
 
 ```text
