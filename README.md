@@ -1,6 +1,6 @@
 # 🧪 3D Simulation & Interaction Framework
 
-**A high-performance, custom-built 3D simulation framework** written in C++17 and OpenGL 3.3 Core Profile. Developed as a research platform for multi-agent interaction, it features a fully custom **deferred shading pipeline**, **instanced rendering** (1M+ grass blades with distance culling), **skeletal animation** blending, **A\* pathfinding** with static-memory optimization, and an **asynchronous client-server save system** using Winsock2 and MongoDB.
+**A high-performance, custom-built 3D simulation framework** written in C++17 and OpenGL 3.3 Core Profile. Developed as a research platform for multi-agent interaction, it features a fully custom **deferred shading pipeline**, **instanced rendering** (1M+ grass blades with distance culling), **skeletal animation**, **A\* pathfinding** with static-memory optimization, and an **asynchronous client-server save system** using Winsock2 and MongoDB.
 
 > **Note:** While it utilizes game-like assets (RPG characters, trees), this project is fundamentally a **graphics and AI engineering testbed** focused on rendering optimization, real-time pathfinding, and network persistence.
 
@@ -9,7 +9,7 @@
 ## ✨ Features
 
 - **Deferred Lighting Pipeline** – G-buffer rendering pass processing world positions, normals, albedo, and specular parameters alongside dynamic point light support.
-- **Skeletal Animation System** – Real-time character skeletal animation blending for idle, running, attacking, and special abilities.
+- **Skeletal Animation System** – Real-time character skeletal animation for idle, running, attacking, and special abilities.
 - **A\* Pathfinding AI** – Grid-based A* navigation enabling aggressive AI agents to track players around forest obstacles dynamically.
 - **Instanced Rendering** – High-density vegetation rendering capable of drawing millions of grass blades and forest trees efficiently.
 - **Integrated Authentication & State Persistence** – ImGui-powered login and registration windows with asynchronous background state persistence to MongoDB.
