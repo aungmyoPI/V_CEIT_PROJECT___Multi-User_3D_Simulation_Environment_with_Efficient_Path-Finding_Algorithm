@@ -1,5 +1,3 @@
-
-
 # V_BE_CEIT_Project
 
 **V_BE_CEIT_Project** is a 3D Action RPG prototype built using C++17, OpenGL 3.3, and CMake. Featuring deferred rendering, skeletal mesh animation, dynamic pathfinding, instanced foliage, and an integrated Dear ImGui authentication UI, this project serves as a testbed for modern rendering techniques and gameplay logic.
