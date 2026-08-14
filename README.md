@@ -178,31 +178,6 @@ The project uses **Dear ImGui** for development and application interfaces, incl
 
 ---
 
-## 🖼️ Media
-
-> Replace the placeholder with a gameplay screenshot, architecture diagram, or performance demonstration.
-
-<p align="center">
-  <img src="assets/screenshot_placeholder.png" alt="3D Simulation Framework Screenshot" width="90%"/>
-</p>
-
-### Gameplay / Rendering Demonstration
-
-A short GIF is particularly useful for demonstrating the project's rendering and AI systems.
-
-```text
-assets/
-└── demo.gif
-```
-
-Embed it with:
-
-```markdown
-<p align="center">
-  <img src="assets/demo.gif" alt="3D Simulation Framework Demonstration" width="90%"/>
-</p>
-```
-
 ---
 
 ## 📦 Prerequisites
