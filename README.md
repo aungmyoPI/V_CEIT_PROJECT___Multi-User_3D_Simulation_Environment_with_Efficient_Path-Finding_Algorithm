@@ -266,7 +266,7 @@ The project is organized around several interacting subsystems:
              ▼                 ▼                 ▼
       ┌────────────┐    ┌────────────┐    ┌────────────┐
       │ Rendering  │    │ Simulation │    │    Input   │
-      │  Pipeline  │    │  & NPC AI      │    │  & UI      │
+      │  Pipeline  │    │  & NPC AI  │    │  & UI      │
       └─────┬──────┘    └─────┬──────┘    └────────────┘
             │                 │
             ▼                 ▼
