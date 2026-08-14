@@ -1,19 +1,22 @@
 cmake_minimum_required(VERSION 3.15)
 project(V_Project VERSION 1.0.0 LANGUAGES CXX C)
 
-# C++ Standard
+# ============================================
+# C++ STANDARD & OPTIONS
+# ============================================
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
 
-# Build type
+option(FORCE_FETCH_DEPS "Force downloading dependencies even if installed on system" OFF)
+
 if(NOT CMAKE_BUILD_TYPE)
-    set(CMAKE_BUILD_TYPE Debug)
+    set(CMAKE_BUILD_TYPE Release)
 endif()
 
 # ============================================
-# AUTO-COLLECT ALL SOURCE FILES
+# AUTO-COLLECT SOURCE FILES
 # ============================================
 file(GLOB_RECURSE CPP_SOURCES
     "${CMAKE_SOURCE_DIR}/src/*.cpp"
@@ -27,32 +30,38 @@ file(GLOB_RECURSE GLAD_SOURCES
 list(APPEND SOURCES ${CPP_SOURCES} ${GLAD_SOURCES})
 
 # ============================================
-# FIND REQUIRED PACKAGES
+# FIND OPENGL & FETCHCONTENT SETUP
 # ============================================
 find_package(OpenGL REQUIRED)
-
-# FetchContent Module for downloading external dependencies
 include(FetchContent)
 
 # ============================================
-# GLFW - Auto-download and build via FetchContent
+# GLFW (System Find with FetchContent Fallback)
 # ============================================
-message(STATUS "Fetching GLFW...")
-set(GLFW_BUILD_DOCS OFF CACHE BOOL "" FORCE)
-set(GLFW_BUILD_TESTS OFF CACHE BOOL "" FORCE)
-set(GLFW_BUILD_EXAMPLES OFF CACHE BOOL "" FORCE)
-set(GLFW_INSTALL OFF CACHE BOOL "" FORCE)
+if(NOT FORCE_FETCH_DEPS)
+    find_package(glfw3 3.3 QUIET)
+endif()
 
-FetchContent_Declare(
-    glfw
-    GIT_REPOSITORY https://github.com/glfw/glfw.git
-    GIT_TAG 3.3.8
-    GIT_SHALLOW TRUE
-)
-FetchContent_MakeAvailable(glfw)
+if(glfw3_FOUND)
+    message(STATUS "GLFW: Using System Package")
+    set(GLFW_LIBRARY glfw)
+else()
+    message(STATUS "GLFW: Fetching from source...")
+    set(GLFW_BUILD_DOCS OFF CACHE BOOL "" FORCE)
+    set(GLFW_BUILD_TESTS OFF CACHE BOOL "" FORCE)
+    set(GLFW_BUILD_EXAMPLES OFF CACHE BOOL "" FORCE)
+    set(GLFW_INSTALL OFF CACHE BOOL "" FORCE)
 
-set(GLFW_LIBRARY glfw)
-set(GLFW_INCLUDE_DIR ${glfw_SOURCE_DIR}/include)
+    FetchContent_Declare(
+        glfw
+        GIT_REPOSITORY https://github.com/glfw/glfw.git
+        GIT_TAG 3.3.8
+        GIT_SHALLOW TRUE
+    )
+    FetchContent_MakeAvailable(glfw)
+    set(GLFW_LIBRARY glfw)
+    set(GLFW_INCLUDE_DIR ${glfw_SOURCE_DIR}/include)
+endif()
 
 # ============================================
 # GLM - Auto-download if missing
@@ -80,48 +89,54 @@ endif()
 # ============================================
 # STB_IMAGE - Auto-download if missing
 # ============================================
-set(STB_IMAGE_URL "https://raw.githubusercontent.com/nothings/stb/master/stb_image.h")
 set(STB_IMAGE_PATH "${CMAKE_SOURCE_DIR}/include/stb_image.h")
-
 if(NOT EXISTS ${STB_IMAGE_PATH})
     message(STATUS "Downloading stb_image.h...")
-    file(DOWNLOAD ${STB_IMAGE_URL} ${STB_IMAGE_PATH}
+    file(DOWNLOAD "https://raw.githubusercontent.com/nothings/stb/master/stb_image.h" ${STB_IMAGE_PATH}
         SHOW_PROGRESS
-        STATUS DOWNLOAD_STATUS
     )
-    list(GET DOWNLOAD_STATUS 0 STATUS_CODE)
-    if(NOT STATUS_CODE EQUAL 0)
-        message(WARNING "Failed to download stb_image.h.")
-    else()
-        message(STATUS "stb_image.h downloaded successfully!")
-    endif()
 endif()
 
 # ============================================
-# ASSIMP - Auto-download and build via FetchContent
+# ASSIMP (System Find with FetchContent Fallback)
 # ============================================
-message(STATUS "Fetching Assimp (this may take a few minutes on first build)...")
+if(NOT FORCE_FETCH_DEPS)
+    find_package(assimp 5.0 QUIET)
+endif()
 
-set(BUILD_SHARED_LIBS OFF CACHE BOOL "" FORCE)
-set(ASSIMP_BUILD_STATIC_LIB ON CACHE BOOL "" FORCE)
-set(ASSIMP_BUILD_TESTS OFF CACHE BOOL "" FORCE)
-set(ASSIMP_BUILD_SAMPLES OFF CACHE BOOL "" FORCE)
-set(ASSIMP_BUILD_ASSIMP_TOOLS OFF CACHE BOOL "" FORCE)
-set(ASSIMP_INSTALL OFF CACHE BOOL "" FORCE)
-set(ASSIMP_BUILD_ZLIB OFF CACHE BOOL "" FORCE)
-set(ASSIMP_BUILD_ASSIMP_VIEW OFF CACHE BOOL "" FORCE)
-set(ASSIMP_WARNINGS_AS_ERRORS OFF CACHE BOOL "" FORCE) # Disable treating warnings as errors
+if(assimp_FOUND)
+    message(STATUS "Assimp: Using System Package")
+    set(ASSIMP_TARGET assimp::assimp)
+else()
+    message(STATUS "Assimp: Fetching and building static target...")
 
-FetchContent_Declare(
-    assimp
-    GIT_REPOSITORY https://github.com/assimp/assimp.git
-    GIT_TAG v5.2.5
-    GIT_SHALLOW TRUE
-)
-FetchContent_MakeAvailable(assimp)
+    # Fix 1: Build Assimp's bundled zlib to avoid unzip.h missing errors
+    set(ASSIMP_BUILD_ZLIB ON CACHE BOOL "" FORCE)
+    set(BUILD_SHARED_LIBS OFF CACHE BOOL "" FORCE)
+    set(ASSIMP_BUILD_STATIC_LIB ON CACHE BOOL "" FORCE)
+    set(ASSIMP_BUILD_TESTS OFF CACHE BOOL "" FORCE)
+    set(ASSIMP_BUILD_SAMPLES OFF CACHE BOOL "" FORCE)
+    set(ASSIMP_BUILD_ASSIMP_TOOLS OFF CACHE BOOL "" FORCE)
+    set(ASSIMP_INSTALL OFF CACHE BOOL "" FORCE)
+    set(ASSIMP_BUILD_ASSIMP_VIEW OFF CACHE BOOL "" FORCE)
+    set(ASSIMP_WARNINGS_AS_ERRORS OFF CACHE BOOL "" FORCE)
+
+    # Fix 2: Disable broken MMD importer to save compilation time
+    set(ASSIMP_BUILD_MMD_IMPORTER OFF CACHE BOOL "" FORCE)
+
+    # Fix 3: Upgraded tag from v5.2.5 to stable v5.3.1
+    FetchContent_Declare(
+        assimp
+        GIT_REPOSITORY https://github.com/assimp/assimp.git
+        GIT_TAG v5.3.1
+        GIT_SHALLOW TRUE
+    )
+    FetchContent_MakeAvailable(assimp)
+    set(ASSIMP_TARGET assimp::assimp)
+endif()
 
 # ============================================
-# DEAR IMGUI - Auto-download & Static Target Setup
+# DEAR IMGUI - FetchContent & Target Setup
 # ============================================
 message(STATUS "Fetching Dear ImGui...")
 FetchContent_Declare(
@@ -132,7 +147,6 @@ FetchContent_Declare(
 )
 FetchContent_MakeAvailable(imgui)
 
-# Compile ImGui and GLFW/OpenGL3 backends into a target static library
 add_library(imgui STATIC
     ${imgui_SOURCE_DIR}/imgui.cpp
     ${imgui_SOURCE_DIR}/imgui_demo.cpp
@@ -152,17 +166,16 @@ target_include_directories(imgui PUBLIC
 target_link_libraries(imgui PRIVATE ${GLFW_LIBRARY})
 
 # ============================================
-# CREATE EXECUTABLE
+# EXECUTABLE TARGET
 # ============================================
 add_executable(V_Project ${SOURCES})
 
-# Force C language property for GLAD sources
 foreach(SOURCE_FILE ${GLAD_SOURCES})
     set_source_files_properties(${SOURCE_FILE} PROPERTIES LANGUAGE C)
 endforeach()
 
 # ============================================
-# INCLUDE DIRECTORIES
+# INCLUDE DIRECTORIES & COMPILE OPTIONS
 # ============================================
 target_include_directories(V_Project PRIVATE
     ${CMAKE_SOURCE_DIR}/src
@@ -173,17 +186,10 @@ target_include_directories(V_Project PRIVATE
     ${imgui_SOURCE_DIR}/backends
 )
 
-# ============================================
-# COMPILER OPTIONS AND DEFINES
-# ============================================
 target_compile_options(V_Project PRIVATE
     $<$<CXX_COMPILER_ID:MSVC>:/W4 /MP>
     $<$<NOT:$<CXX_COMPILER_ID:MSVC>>:-Wall -Wextra -Wno-nontrivial-memcall>
 )
-
-if(MSVC)
-    set(CMAKE_LINKER "link.exe")
-endif()
 
 target_compile_definitions(V_Project PRIVATE
     GLAD_STATIC_API
@@ -191,18 +197,15 @@ target_compile_definitions(V_Project PRIVATE
 )
 
 # ============================================
-# LINK LIBRARIES
+# LINK LIBRARIES & PLATFORM TARGETS
 # ============================================
 target_link_libraries(V_Project PRIVATE
     OpenGL::GL
     ${GLFW_LIBRARY}
-    assimp::assimp
+    ${ASSIMP_TARGET}
     imgui
 )
 
-# ============================================
-# PLATFORM-SPECIFIC TARGETS
-# ============================================
 if(WIN32)
     target_compile_definitions(V_Project PRIVATE _CRT_SECURE_NO_WARNINGS)
     target_link_libraries(V_Project PRIVATE opengl32.lib ws2_32.lib)
@@ -213,7 +216,7 @@ elseif(UNIX)
 endif()
 
 # ============================================
-# COPY ASSETS, SHADERS, AND COMPILE_COMMANDS
+# POST-BUILD ASSET MANAGEMENT
 # ============================================
 add_custom_command(TARGET V_Project POST_BUILD
     COMMAND ${CMAKE_COMMAND} -E copy_directory
@@ -229,21 +232,9 @@ add_custom_command(TARGET V_Project POST_BUILD
     COMMENT "Copying shaders to build directory"
 )
 
-# Safe copy of compilation database for Clangd / IDEs
 add_custom_target(copy_compile_commands ALL
     COMMAND ${CMAKE_COMMAND} -E copy_if_different
         ${CMAKE_BINARY_DIR}/compile_commands.json
         ${CMAKE_SOURCE_DIR}/compile_commands.json
     COMMENT "Copying compile_commands.json to source root"
 )
-
-# ============================================
-# PRINT SUMMARY
-# ============================================
-message(STATUS "========================================")
-message(STATUS "Build type: ${CMAKE_BUILD_TYPE}")
-message(STATUS "GLFW library: ${GLFW_LIBRARY}")
-message(STATUS "GLFW include: ${GLFW_INCLUDE_DIR}")
-message(STATUS "Assimp: FETCHED and BUILT (STATIC)")
-message(STATUS "Dear ImGui: FETCHED and BUILT (STATIC)")
-message(STATUS "========================================")

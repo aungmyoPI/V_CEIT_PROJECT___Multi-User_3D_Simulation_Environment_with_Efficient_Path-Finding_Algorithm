@@ -30,10 +30,12 @@
 #include <algorithm>
 #include <cmath>
 
+#ifdef _WIN32
 extern "C" {
     _declspec(dllexport) unsigned long NvOptimusEnablement = 0x00000001;
     _declspec(dllexport) int AmdPowerXpressRequestHighPerformance = 1;
 }
+#endif
 
 // ============================================================================
 // CONSTANTS & ENUMS
@@ -187,11 +189,13 @@ void RenderAuthInterface(bool& isLoggedIn, glm::vec3& outPlayerPos, float& outPl
 int main()
 {
     // 1. Initialize Subsystems (Winsock, GLFW, GLAD)
-    WSADATA wsaData;
-    if (WSAStartup(MAKEWORD(2, 2), &wsaData) != 0) {
-        std::cerr << "Failed to initialize Winsock." << std::endl;
-        return -1;
-    }
+    #ifdef _WIN32
+        WSADATA wsaData;
+        if (WSAStartup(MAKEWORD(2, 2), &wsaData) != 0) {
+            std::cerr << "Failed to initialize Winsock." << std::endl;
+            return -1;
+        }
+    #endif
 
     GLFWwindow* window = InitWindow();
     if (!window) return -1;
@@ -674,7 +678,9 @@ int main()
     float totalSeconds = static_cast<float>(duration) / 1000.0f;
     std::cout << "Average Frame Performance: " << (static_cast<float>(totalFramesCounter) / totalSeconds) << " FPS" << std::endl;
 
-    WSACleanup();
+    #ifdef _WIN32
+        WSACleanup();
+    #endif
     glfwTerminate();
     return 0;
 }
