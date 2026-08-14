@@ -176,10 +176,6 @@ The project uses **Dear ImGui** for development and application interfaces, incl
 | Database Bridge | **Python** |
 | Build System | **CMake 3.15+ / Ninja** |
 
----
-
----
-
 ## 📦 Prerequisites
 
 Before building the project, make sure the following tools are available:
