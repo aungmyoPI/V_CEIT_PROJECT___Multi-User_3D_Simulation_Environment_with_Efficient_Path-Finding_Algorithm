@@ -1,0 +1,1818 @@
+-- The CXX compiler identification is Clang 22.1.8 with GNU-like command-line
+-- The C compiler identification is Clang 22.1.8 with GNU-like command-line
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/Users/aungm/scoop/apps/llvm/current/bin/clang++.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Users/aungm/scoop/apps/llvm/current/bin/clang.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Found OpenGL: opengl32
+-- Fetching GLFW...
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - not found
+-- Check if compiler accepts -pthread
+-- Check if compiler accepts -pthread - no
+-- Found Threads: TRUE
+-- Using Win32 for window creation
+-- Fetching Assimp (this may take a few minutes on first build)...
+-- Shared libraries disabled
+-- Looking for ZLIB...
+-- Could NOT find PkgConfig (missing: PKG_CONFIG_EXECUTABLE) 
+-- Could not locate ZLIB
+-- compiling zlib from sources
+-- Looking for sys/types.h
+-- Looking for sys/types.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Check size of off64_t
+-- Check size of off64_t - failed
+-- Looking for fseeko
+-- Looking for fseeko - not found
+-- Looking for unistd.h
+-- Looking for unistd.h - not found
+-- Enabled importer formats: AMF 3DS AC ASE ASSBIN B3D BVH COLLADA DXF CSM HMP IRRMESH IQM IRR LWO LWS M3D MD2 MD3 MD5 MDC MDL NFF NDO OFF OBJ OGRE OPENGEX PLY MS3D COB BLEND IFC XGL FBX Q3D Q3BSP RAW SIB SMD STL TERRAGEN 3D X X3D GLTF 3MF MMD
+-- Disabled importer formats:
+-- Enabled exporter formats: OBJ OPENGEX PLY 3DS ASSBIN ASSXML M3D COLLADA FBX STL X X3D GLTF 3MF PBRT ASSJSON STEP
+-- Disabled exporter formats:
+-- Fetching Dear ImGui...
+-- ========================================
+-- Build type: Release
+-- GLFW library: glfw
+-- GLFW include: D:/V_Project_Ver_1_FOR_TESTING/build/_deps/glfw-src/include
+-- Assimp: FETCHED and BUILT (STATIC)
+-- Dear ImGui: FETCHED and BUILT (STATIC)
+-- ========================================
+-- Configuring done (149.1s)
+-- Generating done (0.2s)
+-- Build files have been written to: D:/V_Project_Ver_1_FOR_TESTING/build
+ninja: Entering directory `build'
+[1/278] Building C object _deps/glfw-build/src/CMakeFiles/glfw.dir/win32_time.c.obj
+[2/278] Building C object _deps/glfw-build/src/CMakeFiles/glfw.dir/win32_thread.c.obj
+[3/278] Building C object _deps/glfw-build/src/CMakeFiles/glfw.dir/context.c.obj
+[4/278] Building C object _deps/glfw-build/src/CMakeFiles/glfw.dir/vulkan.c.obj
+[5/278] Building C object _deps/glfw-build/src/CMakeFiles/glfw.dir/init.c.obj
+[6/278] Building C object _deps/glfw-build/src/CMakeFiles/glfw.dir/win32_init.c.obj
+[7/278] Building C object _deps/glfw-build/src/CMakeFiles/glfw.dir/window.c.obj
+[8/278] Building C object _deps/glfw-build/src/CMakeFiles/glfw.dir/win32_joystick.c.obj
+[9/278] Building C object _deps/glfw-build/src/CMakeFiles/glfw.dir/monitor.c.obj
+[10/278] Building C object _deps/glfw-build/src/CMakeFiles/glfw.dir/input.c.obj
+[11/278] Building C object _deps/glfw-build/src/CMakeFiles/glfw.dir/egl_context.c.obj
+[12/278] Building C object _deps/glfw-build/src/CMakeFiles/glfw.dir/wgl_context.c.obj
+[13/278] Building C object _deps/assimp-build/contrib/zlib/CMakeFiles/zlibstatic.dir/compress.c.obj
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/compress.c:22:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+   22 | int ZEXPORT compress2 (dest, destLen, source, sourceLen, level)
+      |             ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/compress.c:68:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+   68 | int ZEXPORT compress (dest, destLen, source, sourceLen)
+      |             ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/compress.c:81:15: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+   81 | uLong ZEXPORT compressBound (sourceLen)
+      |               ^
+3 warnings generated.
+[14/278] Building C object _deps/glfw-build/src/CMakeFiles/glfw.dir/win32_window.c.obj
+[15/278] Building C object _deps/assimp-build/contrib/zlib/CMakeFiles/zlibstatic.dir/adler32.c.obj
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/adler32.c:63:15: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+   63 | uLong ZEXPORT adler32_z(adler, buf, len)
+      |               ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/adler32.c:134:15: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  134 | uLong ZEXPORT adler32(adler, buf, len)
+      |               ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/adler32.c:143:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  143 | local uLong adler32_combine_(adler1, adler2, len2)
+      |             ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/adler32.c:172:15: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  172 | uLong ZEXPORT adler32_combine(adler1, adler2, len2)
+      |               ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/adler32.c:180:15: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  180 | uLong ZEXPORT adler32_combine64(adler1, adler2, len2)
+      |               ^
+5 warnings generated.
+[16/278] Building C object _deps/assimp-build/contrib/zlib/CMakeFiles/zlibstatic.dir/gzclose.c.obj
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/gzclose.c:11:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+   11 | int ZEXPORT gzclose(file)
+      |             ^
+1 warning generated.
+[17/278] Building C object _deps/assimp-build/contrib/zlib/CMakeFiles/zlibstatic.dir/crc32.c.obj
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/crc32.c:202:23: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  202 | unsigned long ZEXPORT crc32_z(crc, buf, len)
+      |                       ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/crc32.c:237:23: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  237 | unsigned long ZEXPORT crc32(crc, buf, len)
+      |                       ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/crc32.c:266:21: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  266 | local unsigned long crc32_little(crc, buf, len)
+      |                     ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/crc32.c:306:21: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  306 | local unsigned long crc32_big(crc, buf, len)
+      |                     ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/crc32.c:344:21: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  344 | local unsigned long gf2_matrix_times(mat, vec)
+      |                     ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/crc32.c:361:12: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  361 | local void gf2_matrix_square(square, mat)
+      |            ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/crc32.c:372:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  372 | local uLong crc32_combine_(crc1, crc2, len2)
+      |             ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/crc32.c:428:15: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  428 | uLong ZEXPORT crc32_combine(crc1, crc2, len2)
+      |               ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/crc32.c:436:15: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  436 | uLong ZEXPORT crc32_combine64(crc1, crc2, len2)
+      |               ^
+9 warnings generated.
+[18/278] Building C object _deps/glfw-build/src/CMakeFiles/glfw.dir/win32_monitor.c.obj
+[19/278] Building C object _deps/assimp-build/contrib/zlib/CMakeFiles/zlibstatic.dir/gzlib.c.obj
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/gzlib.c:75:12: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+   75 | local void gz_reset(state)
+      |            ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/gzlib.c:91:14: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+   91 | local gzFile gz_open(path, fd, mode)
+      |              ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/gzlib.c:193:15: warning: 'wcstombs' is deprecated: This function or variable may be unsafe. Consider using wcstombs_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [-Wdeprecated-declarations]
+  193 |         len = wcstombs(NULL, path, 0);
+      |               ^
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\ucrt\stdlib.h:1012:1: note: 'wcstombs' has been explicitly marked deprecated here
+ 1012 | __DEFINE_CPP_OVERLOAD_STANDARD_NFUNC_0_2_SIZE(
+      | ^
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt.h:930:5: note: expanded from macro '__DEFINE_CPP_OVERLOAD_STANDARD_NFUNC_0_2_SIZE'
+  930 |     __DEFINE_CPP_OVERLOAD_STANDARD_NFUNC_0_2_SIZE_EX(_DeclSpec, _FuncName, _FuncName##_s, _DstType, _SalAttributeDst, _DstType, _Dst, _TType1, _TArg1, _TType2, _TArg2)
+      |     ^
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt.h:2001:17: note: expanded from macro '__DEFINE_CPP_OVERLOAD_STANDARD_NFUNC_0_2_SIZE_EX'
+ 2001 |                 _CRT_INSECURE_DEPRECATE(_SecureFuncName) _DeclSpec size_t __cdecl _FuncName(_SalAttributeDst _DstType *_Dst, _TType1 _TArg1, _TType2 _TArg2);
+      |                 ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vcruntime.h:368:55: note: expanded from macro '_CRT_INSECURE_DEPRECATE'
+  368 |         #define _CRT_INSECURE_DEPRECATE(_Replacement) _CRT_DEPRECATE_TEXT(    \
+      |                                                       ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vcruntime.h:358:47: note: expanded from macro '_CRT_DEPRECATE_TEXT'
+  358 | #define _CRT_DEPRECATE_TEXT(_Text) __declspec(deprecated(_Text))
+      |                                               ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/gzlib.c:208:13: warning: 'wcstombs' is deprecated: This function or variable may be unsafe. Consider using wcstombs_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [-Wdeprecated-declarations]
+  208 |             wcstombs(state->path, path, len + 1);
+      |             ^
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\ucrt\stdlib.h:1012:1: note: 'wcstombs' has been explicitly marked deprecated here
+ 1012 | __DEFINE_CPP_OVERLOAD_STANDARD_NFUNC_0_2_SIZE(
+      | ^
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt.h:930:5: note: expanded from macro '__DEFINE_CPP_OVERLOAD_STANDARD_NFUNC_0_2_SIZE'
+  930 |     __DEFINE_CPP_OVERLOAD_STANDARD_NFUNC_0_2_SIZE_EX(_DeclSpec, _FuncName, _FuncName##_s, _DstType, _SalAttributeDst, _DstType, _Dst, _TType1, _TArg1, _TType2, _TArg2)
+      |     ^
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt.h:2001:17: note: expanded from macro '__DEFINE_CPP_OVERLOAD_STANDARD_NFUNC_0_2_SIZE_EX'
+ 2001 |                 _CRT_INSECURE_DEPRECATE(_SecureFuncName) _DeclSpec size_t __cdecl _FuncName(_SalAttributeDst _DstType *_Dst, _TType1 _TArg1, _TType2 _TArg2);
+      |                 ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vcruntime.h:368:55: note: expanded from macro '_CRT_INSECURE_DEPRECATE'
+  368 |         #define _CRT_INSECURE_DEPRECATE(_Replacement) _CRT_DEPRECATE_TEXT(    \
+      |                                                       ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vcruntime.h:358:47: note: expanded from macro '_CRT_DEPRECATE_TEXT'
+  358 | #define _CRT_DEPRECATE_TEXT(_Text) __declspec(deprecated(_Text))
+      |                                               ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/gzlib.c:243:20: warning: '_wopen' is deprecated: This function or variable may be unsafe. Consider using _wsopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [-Wdeprecated-declarations]
+  243 |         fd == -2 ? _wopen(path, oflag, 0666) :
+      |                    ^
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_wio.h:253:20: note: '_wopen' has been explicitly marked deprecated here
+  253 |     _Check_return_ _CRT_INSECURE_DEPRECATE(_wsopen_s)
+      |                    ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vcruntime.h:368:55: note: expanded from macro '_CRT_INSECURE_DEPRECATE'
+  368 |         #define _CRT_INSECURE_DEPRECATE(_Replacement) _CRT_DEPRECATE_TEXT(    \
+      |                                                       ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vcruntime.h:358:47: note: expanded from macro '_CRT_DEPRECATE_TEXT'
+  358 | #define _CRT_DEPRECATE_TEXT(_Text) __declspec(deprecated(_Text))
+      |                                               ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/gzlib.c:245:9: warning: 'open' is deprecated: The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _open. See online help for details. [-Wdeprecated-declarations]
+  245 |         open((const char *)path, oflag, 0666));
+      |         ^
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_io.h:517:24: note: 'open' has been explicitly marked deprecated here
+  517 |         _Check_return_ _CRT_NONSTDC_DEPRECATE(_open) _CRT_INSECURE_DEPRECATE(_sopen_s)
+      |                        ^
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt.h:428:50: note: expanded from macro '_CRT_NONSTDC_DEPRECATE'
+  428 |         #define _CRT_NONSTDC_DEPRECATE(_NewName) _CRT_DEPRECATE_TEXT(             \
+      |                                                  ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vcruntime.h:358:47: note: expanded from macro '_CRT_DEPRECATE_TEXT'
+  358 | #define _CRT_DEPRECATE_TEXT(_Text) __declspec(deprecated(_Text))
+      |                                               ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/gzlib.c:270:16: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  270 | gzFile ZEXPORT gzopen(path, mode)
+      |                ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/gzlib.c:278:16: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  278 | gzFile ZEXPORT gzopen64(path, mode)
+      |                ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/gzlib.c:286:16: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  286 | gzFile ZEXPORT gzdopen(fd, mode)
+      |                ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/gzlib.c:307:16: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  307 | gzFile ZEXPORT gzopen_w(path, mode)
+      |                ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/gzlib.c:316:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  316 | int ZEXPORT gzbuffer(file, size)
+      |             ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/gzlib.c:343:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  343 | int ZEXPORT gzrewind(file)
+      |             ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/gzlib.c:366:19: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  366 | z_off64_t ZEXPORT gzseek64(file, offset, whence)
+      |                   ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/gzlib.c:443:17: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  443 | z_off_t ZEXPORT gzseek(file, offset, whence)
+      |                 ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/gzlib.c:455:19: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  455 | z_off64_t ZEXPORT gztell64(file)
+      |                   ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/gzlib.c:472:17: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  472 | z_off_t ZEXPORT gztell(file)
+      |                 ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/gzlib.c:482:19: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  482 | z_off64_t ZEXPORT gzoffset64(file)
+      |                   ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/gzlib.c:505:17: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  505 | z_off_t ZEXPORT gzoffset(file)
+      |                 ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/gzlib.c:515:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  515 | int ZEXPORT gzeof(file)
+      |             ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/gzlib.c:532:22: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  532 | const char * ZEXPORT gzerror(file, errnum)
+      |                      ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/gzlib.c:553:14: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  553 | void ZEXPORT gzclearerr(file)
+      |              ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/gzlib.c:579:20: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  579 | void ZLIB_INTERNAL gz_error(state, err, msg)
+      |                    ^
+22 warnings generated.
+[20/278] Building C object _deps/assimp-build/contrib/zlib/CMakeFiles/zlibstatic.dir/uncompr.c.obj
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/uncompr.c:27:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+   27 | int ZEXPORT uncompress2 (dest, destLen, source, sourceLen)
+      |             ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/uncompr.c:86:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+   86 | int ZEXPORT uncompress (dest, destLen, source, sourceLen)
+      |             ^
+2 warnings generated.
+[21/278] Building C object _deps/assimp-build/contrib/zlib/CMakeFiles/zlibstatic.dir/inftrees.c.obj
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/inftrees.c:32:19: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+   32 | int ZLIB_INTERNAL inflate_table(type, lens, codes, table, bits, work)
+      |                   ^
+1 warning generated.
+[22/278] Building C object _deps/glfw-build/src/CMakeFiles/glfw.dir/osmesa_context.c.obj
+[23/278] Building C object _deps/assimp-build/contrib/zlib/CMakeFiles/zlibstatic.dir/zutil.c.obj
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/zutil.c:133:22: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  133 | const char * ZEXPORT zError(err)
+      |                      ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/zutil.c:305:22: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  305 | voidpf ZLIB_INTERNAL zcalloc (opaque, items, size)
+      |                      ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/zutil.c:315:20: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  315 | void ZLIB_INTERNAL zcfree (opaque, ptr)
+      |                    ^
+3 warnings generated.
+[24/278] Building C object _deps/assimp-build/contrib/zlib/CMakeFiles/zlibstatic.dir/inffast.c.obj
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/inffast.c:50:20: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+   50 | void ZLIB_INTERNAL inflate_fast(strm, start)
+      |                    ^
+1 warning generated.
+[25/278] Building C object _deps/assimp-build/contrib/zlib/CMakeFiles/zlibstatic.dir/gzread.c.obj
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/gzread.c:21:11: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+   21 | local int gz_load(state, buf, len, have)
+      |           ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/gzread.c:35:15: warning: 'read' is deprecated: The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _read. See online help for details. [-Wdeprecated-declarations]
+   35 |         ret = read(state->fd, buf + *have, get);
+      |               ^
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_io.h:524:9: note: 'read' has been explicitly marked deprecated here
+  524 |         _CRT_NONSTDC_DEPRECATE(_read)
+      |         ^
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt.h:428:50: note: expanded from macro '_CRT_NONSTDC_DEPRECATE'
+  428 |         #define _CRT_NONSTDC_DEPRECATE(_NewName) _CRT_DEPRECATE_TEXT(             \
+      |                                                  ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vcruntime.h:358:47: note: expanded from macro '_CRT_DEPRECATE_TEXT'
+  358 | #define _CRT_DEPRECATE_TEXT(_Text) __declspec(deprecated(_Text))
+      |                                               ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/gzread.c:41:34: warning: 'strerror' is deprecated: This function or variable may be unsafe. Consider using strerror_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [-Wdeprecated-declarations]
+   41 |         gz_error(state, Z_ERRNO, zstrerror());
+      |                                  ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib\gzguts.h:133:25: note: expanded from macro 'zstrerror'
+  133 | #    define zstrerror() strerror(errno)
+      |                         ^
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\ucrt\string.h:177:16: note: 'strerror' has been explicitly marked deprecated here
+  177 | _Check_return_ _CRT_INSECURE_DEPRECATE(strerror_s)
+      |                ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vcruntime.h:368:55: note: expanded from macro '_CRT_INSECURE_DEPRECATE'
+  368 |         #define _CRT_INSECURE_DEPRECATE(_Replacement) _CRT_DEPRECATE_TEXT(    \
+      |                                                       ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vcruntime.h:358:47: note: expanded from macro '_CRT_DEPRECATE_TEXT'
+  358 | #define _CRT_DEPRECATE_TEXT(_Text) __declspec(deprecated(_Text))
+      |                                               ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/gzread.c:56:11: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+   56 | local int gz_avail(state)
+      |           ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/gzread.c:91:11: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+   91 | local int gz_look(state)
+      |           ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/gzread.c:175:11: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  175 | local int gz_decomp(state)
+      |           ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/gzread.c:229:11: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  229 | local int gz_fetch(state)
+      |           ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/gzread.c:259:11: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  259 | local int gz_skip(state, len)
+      |           ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/gzread.c:294:16: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  294 | local z_size_t gz_read(state, buf, len)
+      |                ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/gzread.c:375:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  375 | int ZEXPORT gzread(file, buf, len)
+      |             ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/gzread.c:411:18: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  411 | z_size_t ZEXPORT gzfread(buf, size, nitems, file)
+      |                  ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/gzread.c:447:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  447 | int ZEXPORT gzgetc(file)
+      |             ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/gzread.c:474:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  474 | int ZEXPORT gzgetc_(file)
+      |             ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/gzread.c:481:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  481 | int ZEXPORT gzungetc(c, file)
+      |             ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/gzread.c:541:16: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  541 | char * ZEXPORT gzgets(file, buf, len)
+      |                ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/gzread.c:605:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  605 | int ZEXPORT gzdirect(file)
+      |             ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/gzread.c:625:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  625 | int ZEXPORT gzclose_r(file)
+      |             ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/gzread.c:649:11: warning: 'close' is deprecated: The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _close. See online help for details. [-Wdeprecated-declarations]
+  649 |     ret = close(state->fd);
+      |           ^
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_io.h:460:28: note: 'close' has been explicitly marked deprecated here
+  460 |         _Check_return_opt_ _CRT_NONSTDC_DEPRECATE(_close)
+      |                            ^
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt.h:428:50: note: expanded from macro '_CRT_NONSTDC_DEPRECATE'
+  428 |         #define _CRT_NONSTDC_DEPRECATE(_NewName) _CRT_DEPRECATE_TEXT(             \
+      |                                                  ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vcruntime.h:358:47: note: expanded from macro '_CRT_DEPRECATE_TEXT'
+  358 | #define _CRT_DEPRECATE_TEXT(_Text) __declspec(deprecated(_Text))
+      |                                               ^
+18 warnings generated.
+[26/278] Building C object _deps/assimp-build/contrib/zlib/CMakeFiles/zlibstatic.dir/gzwrite.c.obj
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/gzwrite.c:17:11: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+   17 | local int gz_init(state)
+      |           ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/gzwrite.c:73:11: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+   73 | local int gz_comp(state, flush)
+      |           ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/gzwrite.c:89:20: warning: 'write' is deprecated: The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _write. See online help for details. [-Wdeprecated-declarations]
+   89 |             writ = write(state->fd, strm->next_in, put);
+      |                    ^
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_io.h:559:24: note: 'write' has been explicitly marked deprecated here
+  559 |         _Check_return_ _CRT_NONSTDC_DEPRECATE(_write)
+      |                        ^
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt.h:428:50: note: expanded from macro '_CRT_NONSTDC_DEPRECATE'
+  428 |         #define _CRT_NONSTDC_DEPRECATE(_NewName) _CRT_DEPRECATE_TEXT(             \
+      |                                                  ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vcruntime.h:358:47: note: expanded from macro '_CRT_DEPRECATE_TEXT'
+  358 | #define _CRT_DEPRECATE_TEXT(_Text) __declspec(deprecated(_Text))
+      |                                               ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/gzwrite.c:91:42: warning: 'strerror' is deprecated: This function or variable may be unsafe. Consider using strerror_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [-Wdeprecated-declarations]
+   91 |                 gz_error(state, Z_ERRNO, zstrerror());
+      |                                          ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib\gzguts.h:133:25: note: expanded from macro 'zstrerror'
+  133 | #    define zstrerror() strerror(errno)
+      |                         ^
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\ucrt\string.h:177:16: note: 'strerror' has been explicitly marked deprecated here
+  177 | _Check_return_ _CRT_INSECURE_DEPRECATE(strerror_s)
+      |                ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vcruntime.h:368:55: note: expanded from macro '_CRT_INSECURE_DEPRECATE'
+  368 |         #define _CRT_INSECURE_DEPRECATE(_Replacement) _CRT_DEPRECATE_TEXT(    \
+      |                                                       ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vcruntime.h:358:47: note: expanded from macro '_CRT_DEPRECATE_TEXT'
+  358 | #define _CRT_DEPRECATE_TEXT(_Text) __declspec(deprecated(_Text))
+      |                                               ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/gzwrite.c:110:24: warning: 'write' is deprecated: The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _write. See online help for details. [-Wdeprecated-declarations]
+  110 |                 writ = write(state->fd, state->x.next, put);
+      |                        ^
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_io.h:559:24: note: 'write' has been explicitly marked deprecated here
+  559 |         _Check_return_ _CRT_NONSTDC_DEPRECATE(_write)
+      |                        ^
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt.h:428:50: note: expanded from macro '_CRT_NONSTDC_DEPRECATE'
+  428 |         #define _CRT_NONSTDC_DEPRECATE(_NewName) _CRT_DEPRECATE_TEXT(             \
+      |                                                  ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vcruntime.h:358:47: note: expanded from macro '_CRT_DEPRECATE_TEXT'
+  358 | #define _CRT_DEPRECATE_TEXT(_Text) __declspec(deprecated(_Text))
+      |                                               ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/gzwrite.c:112:46: warning: 'strerror' is deprecated: This function or variable may be unsafe. Consider using strerror_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [-Wdeprecated-declarations]
+  112 |                     gz_error(state, Z_ERRNO, zstrerror());
+      |                                              ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib\gzguts.h:133:25: note: expanded from macro 'zstrerror'
+  133 | #    define zstrerror() strerror(errno)
+      |                         ^
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\ucrt\string.h:177:16: note: 'strerror' has been explicitly marked deprecated here
+  177 | _Check_return_ _CRT_INSECURE_DEPRECATE(strerror_s)
+      |                ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vcruntime.h:368:55: note: expanded from macro '_CRT_INSECURE_DEPRECATE'
+  368 |         #define _CRT_INSECURE_DEPRECATE(_Replacement) _CRT_DEPRECATE_TEXT(    \
+      |                                                       ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vcruntime.h:358:47: note: expanded from macro '_CRT_DEPRECATE_TEXT'
+  358 | #define _CRT_DEPRECATE_TEXT(_Text) __declspec(deprecated(_Text))
+      |                                               ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/gzwrite.c:145:11: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  145 | local int gz_zero(state, len)
+      |           ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/gzwrite.c:178:16: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  178 | local z_size_t gz_write(state, buf, len)
+      |                ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/gzwrite.c:246:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  246 | int ZEXPORT gzwrite(file, buf, len)
+      |             ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/gzwrite.c:274:18: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  274 | z_size_t ZEXPORT gzfwrite(buf, size, nitems, file)
+      |                  ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/gzwrite.c:304:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  304 | int ZEXPORT gzputc(file, c)
+      |             ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/gzwrite.c:352:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  352 | int ZEXPORT gzputs(file, str)
+      |             ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/gzwrite.c:556:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  556 | int ZEXPORT gzflush(file, flush)
+      |             ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/gzwrite.c:588:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  588 | int ZEXPORT gzsetparams(file, level, strategy)
+      |             ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/gzwrite.c:630:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  630 | int ZEXPORT gzclose_w(file)
+      |             ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/gzwrite.c:664:9: warning: 'close' is deprecated: The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _close. See online help for details. [-Wdeprecated-declarations]
+  664 |     if (close(state->fd) == -1)
+      |         ^
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_io.h:460:28: note: 'close' has been explicitly marked deprecated here
+  460 |         _Check_return_opt_ _CRT_NONSTDC_DEPRECATE(_close)
+      |                            ^
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt.h:428:50: note: expanded from macro '_CRT_NONSTDC_DEPRECATE'
+  428 |         #define _CRT_NONSTDC_DEPRECATE(_NewName) _CRT_DEPRECATE_TEXT(             \
+      |                                                  ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vcruntime.h:358:47: note: expanded from macro '_CRT_DEPRECATE_TEXT'
+  358 | #define _CRT_DEPRECATE_TEXT(_Text) __declspec(deprecated(_Text))
+      |                                               ^
+16 warnings generated.
+[27/278] Building C object _deps/assimp-build/contrib/zlib/CMakeFiles/zlibstatic.dir/trees.c.obj
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/trees.c:379:20: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  379 | void ZLIB_INTERNAL _tr_init(s)
+      |                    ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/trees.c:407:12: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  407 | local void init_block(s)
+      |            ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/trees.c:451:12: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  451 | local void pqdownheap(s, tree, k)
+      |            ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/trees.c:486:12: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  486 | local void gen_bitlen(s, desc)
+      |            ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/trees.c:572:12: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  572 | local void gen_codes (tree, max_code, bl_count)
+      |            ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/trees.c:615:12: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  615 | local void build_tree(s, desc)
+      |            ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/trees.c:703:12: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  703 | local void scan_tree (s, tree, max_code)
+      |            ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/trees.c:748:12: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  748 | local void send_tree (s, tree, max_code)
+      |            ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/trees.c:799:11: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  799 | local int build_bl_tree(s)
+      |           ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/trees.c:834:12: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  834 | local void send_all_trees(s, lcodes, dcodes, blcodes)
+      |            ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/trees.c:863:20: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  863 | void ZLIB_INTERNAL _tr_stored_block(s, buf, stored_len, last)
+      |                    ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/trees.c:886:20: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  886 | void ZLIB_INTERNAL _tr_flush_bits(s)
+      |                    ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/trees.c:896:20: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  896 | void ZLIB_INTERNAL _tr_align(s)
+      |                    ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/trees.c:911:20: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  911 | void ZLIB_INTERNAL _tr_flush_block(s, buf, stored_len, last)
+      |                    ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/trees.c:1014:19: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1014 | int ZLIB_INTERNAL _tr_tally (s, dist, lc)
+      |                   ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/trees.c:1064:12: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1064 | local void compress_block(s, ltree, dtree)
+      |            ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/trees.c:1124:11: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1124 | local int detect_data_type(s)
+      |           ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/trees.c:1158:16: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1158 | local unsigned bi_reverse(code, len)
+      |                ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/trees.c:1173:12: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1173 | local void bi_flush(s)
+      |            ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/trees.c:1190:12: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1190 | local void bi_windup(s)
+      |            ^
+20 warnings generated.
+[28/278] Building C object _deps/assimp-build/contrib/zlib/CMakeFiles/zlibstatic.dir/infback.c.obj
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/infback.c:28:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+   28 | int ZEXPORT inflateBackInit_(strm, windowBits, window, version, stream_size)
+      |             ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/infback.c:82:12: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+   82 | local void fixedtables(state)
+      |            ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/infback.c:250:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  250 | int ZEXPORT inflateBack(strm, in, in_desc, out, out_desc)
+      |             ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/infback.c:631:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  631 | int ZEXPORT inflateBackEnd(strm)
+      |             ^
+4 warnings generated.
+[29/278] Building C object _deps/assimp-build/contrib/zlib/CMakeFiles/zlibstatic.dir/deflate.c.obj
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/deflate.c:204:12: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  204 | local void slide_hash(s)
+      |            ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/deflate.c:231:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  231 | int ZEXPORT deflateInit_(strm, level, version, stream_size)
+      |             ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/deflate.c:243:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  243 | int ZEXPORT deflateInit2_(strm, level, method, windowBits, memLevel, strategy,
+      |             ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/deflate.c:356:11: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  356 | local int deflateStateCheck (strm)
+      |           ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/deflate.c:379:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  379 | int ZEXPORT deflateSetDictionary (strm, dictionary, dictLength)
+      |             ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/deflate.c:448:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  448 | int ZEXPORT deflateGetDictionary (strm, dictionary, dictLength)
+      |             ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/deflate.c:470:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  470 | int ZEXPORT deflateResetKeep (strm)
+      |             ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/deflate.c:508:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  508 | int ZEXPORT deflateReset (strm)
+      |             ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/deflate.c:520:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  520 | int ZEXPORT deflateSetHeader (strm, head)
+      |             ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/deflate.c:531:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  531 | int ZEXPORT deflatePending (strm, pending, bits)
+      |             ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/deflate.c:545:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  545 | int ZEXPORT deflatePrime (strm, bits, value)
+      |             ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/deflate.c:571:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  571 | int ZEXPORT deflateParams(strm, level, strategy)
+      |             ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/deflate.c:620:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  620 | int ZEXPORT deflateTune(strm, good_length, max_lazy, nice_length, max_chain)
+      |             ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/deflate.c:655:15: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  655 | uLong ZEXPORT deflateBound(strm, sourceLen)
+      |               ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/deflate.c:719:12: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  719 | local void putShortMSB (s, b)
+      |            ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/deflate.c:733:12: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  733 | local void flush_pending(strm)
+      |            ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/deflate.c:766:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  766 | int ZEXPORT deflate (strm, flush)
+      |             ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/deflate.c:1079:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1079 | int ZEXPORT deflateEnd (strm)
+      |             ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/deflate.c:1105:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1105 | int ZEXPORT deflateCopy (dest, source)
+      |             ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/deflate.c:1167:16: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1167 | local unsigned read_buf(strm, buf, size)
+      |                ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/deflate.c:1197:12: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1197 | local void lm_init (s)
+      |            ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/deflate.c:1239:12: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1239 | local uInt longest_match(s, cur_match)
+      |            ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/deflate.c:1485:12: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1485 | local void fill_window(s)
+      |            ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/deflate.c:1648:19: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1648 | local block_state deflate_stored(s, flush)
+      |                   ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/deflate.c:1835:19: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1835 | local block_state deflate_fast(s, flush)
+      |                   ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/deflate.c:1937:19: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1937 | local block_state deflate_slow(s, flush)
+      |                   ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/deflate.c:2068:19: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 2068 | local block_state deflate_rle(s, flush)
+      |                   ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/deflate.c:2141:19: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 2141 | local block_state deflate_huff(s, flush)
+      |                   ^
+28 warnings generated.
+[30/278] Building C object _deps/assimp-build/contrib/zlib/CMakeFiles/zlibstatic.dir/inflate.c.obj
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/inflate.c:105:11: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  105 | local int inflateStateCheck(strm)
+      |           ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/inflate.c:119:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  119 | int ZEXPORT inflateResetKeep(strm)
+      |             ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/inflate.c:144:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  144 | int ZEXPORT inflateReset(strm)
+      |             ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/inflate.c:157:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  157 | int ZEXPORT inflateReset2(strm, windowBits)
+      |             ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/inflate.c:195:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  195 | int ZEXPORT inflateInit2_(strm, windowBits, version, stream_size)
+      |             ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/inflate.c:239:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  239 | int ZEXPORT inflateInit_(strm, version, stream_size)
+      |             ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/inflate.c:247:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  247 | int ZEXPORT inflatePrime(strm, bits, value)
+      |             ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/inflate.c:278:12: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  278 | local void fixedtables(state)
+      |            ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/inflate.c:396:11: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  396 | local int updatewindow(strm, end, copy)
+      |           ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/inflate.c:622:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  622 | int ZEXPORT inflate(strm, flush)
+      |             ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/inflate.c:1277:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1277 | int ZEXPORT inflateEnd(strm)
+      |             ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/inflate.c:1291:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1291 | int ZEXPORT inflateGetDictionary(strm, dictionary, dictLength)
+      |             ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/inflate.c:1314:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1314 | int ZEXPORT inflateSetDictionary(strm, dictionary, dictLength)
+      |             ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/inflate.c:1349:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1349 | int ZEXPORT inflateGetHeader(strm, head)
+      |             ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/inflate.c:1377:16: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1377 | local unsigned syncsearch(have, buf, len)
+      |                ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/inflate.c:1400:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1400 | int ZEXPORT inflateSync(strm)
+      |             ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/inflate.c:1453:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1453 | int ZEXPORT inflateSyncPoint(strm)
+      |             ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/inflate.c:1463:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1463 | int ZEXPORT inflateCopy(dest, source)
+      |             ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/inflate.c:1510:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1510 | int ZEXPORT inflateUndermine(strm, subvert)
+      |             ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/inflate.c:1528:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1528 | int ZEXPORT inflateValidate(strm, check)
+      |             ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/inflate.c:1543:14: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1543 | long ZEXPORT inflateMark(strm)
+      |              ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/zlib/inflate.c:1556:23: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1556 | unsigned long ZEXPORT inflateCodesUsed(strm)
+      |                       ^
+22 warnings generated.
+[31/278] Linking C static library glfw3.lib
+[32/278] Building CXX object CMakeFiles/imgui.dir/_deps/imgui-src/backends/imgui_impl_opengl3.cpp.obj
+In file included from D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src/backends/imgui_impl_opengl3.cpp:115:
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui.h:2973:43: warning: first argument in call to 'memset' is a pointer to non-trivially copyable type 'ImDrawListSplitter' [-Wnontrivial-memcall]
+ 2973 |     inline ImDrawListSplitter()  { memset(this, 0, sizeof(*this)); }
+      |                                           ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui.h:2973:43: note: explicitly cast the pointer to silence this warning
+ 2973 |     inline ImDrawListSplitter()  { memset(this, 0, sizeof(*this)); }
+      |                                           ^
+      |                                           (void*)
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui.h:3044:60: warning: first argument in call to 'memset' is a pointer to non-trivially copyable type 'ImDrawList' [-Wnontrivial-memcall]
+ 3044 |     ImDrawList(ImDrawListSharedData* shared_data) { memset(this, 0, sizeof(*this)); _Data = shared_data; }
+      |                                                            ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui.h:3044:60: note: explicitly cast the pointer to silence this warning
+ 3044 |     ImDrawList(ImDrawListSharedData* shared_data) { memset(this, 0, sizeof(*this)); _Data = shared_data; }
+      |                                                            ^
+      |                                                            (void*)
+2 warnings generated.
+[33/278] Linking C static library zlibstatic.lib
+[34/278] Building CXX object CMakeFiles/imgui.dir/_deps/imgui-src/backends/imgui_impl_glfw.cpp.obj
+In file included from D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src/backends/imgui_impl_glfw.cpp:75:
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui.h:2973:43: warning: first argument in call to 'memset' is a pointer to non-trivially copyable type 'ImDrawListSplitter' [-Wnontrivial-memcall]
+ 2973 |     inline ImDrawListSplitter()  { memset(this, 0, sizeof(*this)); }
+      |                                           ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui.h:2973:43: note: explicitly cast the pointer to silence this warning
+ 2973 |     inline ImDrawListSplitter()  { memset(this, 0, sizeof(*this)); }
+      |                                           ^
+      |                                           (void*)
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui.h:3044:60: warning: first argument in call to 'memset' is a pointer to non-trivially copyable type 'ImDrawList' [-Wnontrivial-memcall]
+ 3044 |     ImDrawList(ImDrawListSharedData* shared_data) { memset(this, 0, sizeof(*this)); _Data = shared_data; }
+      |                                                            ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui.h:3044:60: note: explicitly cast the pointer to silence this warning
+ 3044 |     ImDrawList(ImDrawListSharedData* shared_data) { memset(this, 0, sizeof(*this)); _Data = shared_data; }
+      |                                                            ^
+      |                                                            (void*)
+2 warnings generated.
+[35/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/CApi/CInterfaceIOWrapper.cpp.obj
+[36/278] Building CXX object CMakeFiles/imgui.dir/_deps/imgui-src/imgui_tables.cpp.obj
+In file included from D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src/imgui_tables.cpp:198:
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui.h:2973:43: warning: first argument in call to 'memset' is a pointer to non-trivially copyable type 'ImDrawListSplitter' [-Wnontrivial-memcall]
+ 2973 |     inline ImDrawListSplitter()  { memset(this, 0, sizeof(*this)); }
+      |                                           ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui.h:2973:43: note: explicitly cast the pointer to silence this warning
+ 2973 |     inline ImDrawListSplitter()  { memset(this, 0, sizeof(*this)); }
+      |                                           ^
+      |                                           (void*)
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui.h:3044:60: warning: first argument in call to 'memset' is a pointer to non-trivially copyable type 'ImDrawList' [-Wnontrivial-memcall]
+ 3044 |     ImDrawList(ImDrawListSharedData* shared_data) { memset(this, 0, sizeof(*this)); _Data = shared_data; }
+      |                                                            ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui.h:3044:60: note: explicitly cast the pointer to silence this warning
+ 3044 |     ImDrawList(ImDrawListSharedData* shared_data) { memset(this, 0, sizeof(*this)); _Data = shared_data; }
+      |                                                            ^
+      |                                                            (void*)
+In file included from D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src/imgui_tables.cpp:200:
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui_internal.h:807:54: warning: first argument in call to 'memset' is a pointer to non-trivially copyable type 'ImDrawDataBuilder' [-Wnontrivial-memcall]
+  807 |     ImDrawDataBuilder()                     { memset(this, 0, sizeof(*this)); }
+      |                                                      ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui_internal.h:807:54: note: explicitly cast the pointer to silence this warning
+  807 |     ImDrawDataBuilder()                     { memset(this, 0, sizeof(*this)); }
+      |                                                      ^
+      |                                                      (void*)
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui_internal.h:1108:50: warning: first argument in call to 'memset' is a pointer to non-trivially copyable type 'ImGuiInputTextDeactivatedState' [-Wnontrivial-memcall]
+ 1108 |     ImGuiInputTextDeactivatedState()    { memset(this, 0, sizeof(*this)); }
+      |                                                  ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui_internal.h:1108:50: note: explicitly cast the pointer to silence this warning
+ 1108 |     ImGuiInputTextDeactivatedState()    { memset(this, 0, sizeof(*this)); }
+      |                                                  ^
+      |                                                  (void*)
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui_internal.h:1134:54: warning: first argument in call to 'memset' is a pointer to non-trivially copyable type 'ImGuiInputTextState' [-Wnontrivial-memcall]
+ 1134 |     ImGuiInputTextState()                   { memset(this, 0, sizeof(*this)); }
+      |                                                      ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui_internal.h:1134:54: note: explicitly cast the pointer to silence this warning
+ 1134 |     ImGuiInputTextState()                   { memset(this, 0, sizeof(*this)); }
+      |                                                      ^
+      |                                                      (void*)
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui_internal.h:1526:46: warning: first argument in call to 'memset' is a pointer to non-trivially copyable type 'ImGuiListClipperData' [-Wnontrivial-memcall]
+ 1526 |     ImGuiListClipperData()          { memset(this, 0, sizeof(*this)); }
+      |                                              ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui_internal.h:1526:46: note: explicitly cast the pointer to silence this warning
+ 1526 |     ImGuiListClipperData()          { memset(this, 0, sizeof(*this)); }
+      |                                              ^
+      |                                              (void*)
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui_internal.h:1710:34: warning: first argument in call to 'memset' is a pointer to non-trivially copyable type 'ImGuiOldColumns' [-Wnontrivial-memcall]
+ 1710 |     ImGuiOldColumns()   { memset(this, 0, sizeof(*this)); }
+      |                                  ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui_internal.h:1710:34: note: explicitly cast the pointer to silence this warning
+ 1710 |     ImGuiOldColumns()   { memset(this, 0, sizeof(*this)); }
+      |                                  ^
+      |                                  (void*)
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui_internal.h:1966:38: warning: first argument in call to 'memset' is a pointer to non-trivially copyable type 'ImGuiIDStackTool' [-Wnontrivial-memcall]
+ 1966 |     ImGuiIDStackTool()      { memset(this, 0, sizeof(*this)); CopyToClipboardLastTime = -FLT_MAX; }
+      |                                      ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui_internal.h:1966:38: note: explicitly cast the pointer to silence this warning
+ 1966 |     ImGuiIDStackTool()      { memset(this, 0, sizeof(*this)); CopyToClipboardLastTime = -FLT_MAX; }
+      |                                      ^
+      |                                      (void*)
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui_internal.h:3019:42: warning: first argument in call to 'memset' is a pointer to non-trivially copyable type 'ImGuiTable' [-Wnontrivial-memcall]
+ 3019 |     ImGuiTable()                { memset(this, 0, sizeof(*this)); LastFrameActive = -1; }
+      |                                          ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui_internal.h:3019:42: note: explicitly cast the pointer to silence this warning
+ 3019 |     ImGuiTable()                { memset(this, 0, sizeof(*this)); LastFrameActive = -1; }
+      |                                          ^
+      |                                          (void*)
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui_internal.h:3047:42: warning: first argument in call to 'memset' is a pointer to non-trivially copyable type 'ImGuiTableTempData' [-Wnontrivial-memcall]
+ 3047 |     ImGuiTableTempData()        { memset(this, 0, sizeof(*this)); LastTimeActive = -1.0f; }
+      |                                          ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui_internal.h:3047:42: note: explicitly cast the pointer to silence this warning
+ 3047 |     ImGuiTableTempData()        { memset(this, 0, sizeof(*this)); LastTimeActive = -1.0f; }
+      |                                          ^
+      |                                          (void*)
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src/imgui_tables.cpp:2650:35: warning: first argument in call to 'memcpy' is a pointer to non-trivially copyable type 'ImDrawChannel' [-Wnontrivial-memcall]
+ 2650 |                     memcpy(dst_tmp++, channel, sizeof(ImDrawChannel));
+      |                                   ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src/imgui_tables.cpp:2650:35: note: explicitly cast the pointer to silence this warning
+ 2650 |                     memcpy(dst_tmp++, channel, sizeof(ImDrawChannel));
+      |                                   ^
+      |                            (void*)
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src/imgui_tables.cpp:2656:31: warning: first argument in call to 'memcpy' is a pointer to non-trivially copyable type 'ImDrawChannel' [-Wnontrivial-memcall]
+ 2656 |                 memcpy(dst_tmp++, &splitter->_Channels[table->Bg2DrawChannelUnfrozen], sizeof(ImDrawChannel));
+      |                               ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src/imgui_tables.cpp:2656:31: note: explicitly cast the pointer to silence this warning
+ 2656 |                 memcpy(dst_tmp++, &splitter->_Channels[table->Bg2DrawChannelUnfrozen], sizeof(ImDrawChannel));
+      |                               ^
+      |                        (void*)
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src/imgui_tables.cpp:2665:27: warning: first argument in call to 'memcpy' is a pointer to non-trivially copyable type 'ImDrawChannel' [-Wnontrivial-memcall]
+ 2665 |             memcpy(dst_tmp++, channel, sizeof(ImDrawChannel));
+      |                           ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src/imgui_tables.cpp:2665:27: note: explicitly cast the pointer to silence this warning
+ 2665 |             memcpy(dst_tmp++, channel, sizeof(ImDrawChannel));
+      |                           ^
+      |                    (void*)
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src/imgui_tables.cpp:2669:41: warning: first argument in call to 'memcpy' is a pointer to non-trivially copyable type 'ImDrawChannel' [-Wnontrivial-memcall]
+ 2669 |         memcpy(splitter->_Channels.Data + LEADING_DRAW_CHANNELS, g.DrawChannelsTempMergeBuffer.Data, (splitter->_Count - LEADING_DRAW_CHANNELS) * sizeof(ImDrawChannel));
+      |                                         ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src/imgui_tables.cpp:2669:41: note: explicitly cast the pointer to silence this warning
+ 2669 |         memcpy(splitter->_Channels.Data + LEADING_DRAW_CHANNELS, g.DrawChannelsTempMergeBuffer.Data, (splitter->_Count - LEADING_DRAW_CHANNELS) * sizeof(ImDrawChannel));
+      |                                         ^
+      |                (void*)
+In file included from D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src/imgui_tables.cpp:198:
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui.h:2095:182: warning: first argument in call to 'memcpy' is a pointer to non-trivially copyable type 'ImGuiTable' [-Wnontrivial-memcall]
+ 2095 |     inline void         reserve(int new_capacity)           { if (new_capacity <= Capacity) return; T* new_data = (T*)IM_ALLOC((size_t)new_capacity * sizeof(T)); if (Data) { memcpy(new_data, Data, (size_t)Size * sizeof(T)); IM_FREE(Data); } Data = new_data; Capacity = new_capacity; }
+      |                                                                                                                                                                                      ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui.h:2092:88: note: in instantiation of member function 'ImVector<ImGuiTable>::reserve' requested here
+ 2092 |     inline void         resize(int new_size)                { if (new_size > Capacity) reserve(_grow_capacity(new_size)); Size = new_size; }
+      |                                                                                        ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui_internal.h:695:101: note: in instantiation of member function 'ImVector<ImGuiTable>::resize' requested here
+  695 |     T*          Add()                               { int idx = FreeIdx; if (idx == Buf.Size) { Buf.resize(Buf.Size + 1); FreeIdx++; } else { FreeIdx = *(int*)&Buf[idx]; } IM_PLACEMENT_NEW(&Buf[idx]) T(); AliveCount++; return &Buf[idx]; }
+      |                                                                                                     ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui_internal.h:692:156: note: in instantiation of member function 'ImPool<ImGuiTable>::Add' requested here
+  692 |     T*          GetOrAddByKey(ImGuiID key)          { int* p_idx = Map.GetIntRef(key, -1); if (*p_idx != -1) return &Buf[*p_idx]; *p_idx = FreeIdx; return Add(); }
+      |                                                                                                                                                            ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src/imgui_tables.cpp:346:34: note: in instantiation of member function 'ImPool<ImGuiTable>::GetOrAddByKey' requested here
+  346 |     ImGuiTable* table = g.Tables.GetOrAddByKey(id);
+      |                                  ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui.h:2095:182: note: explicitly cast the pointer to silence this warning
+ 2095 |     inline void         reserve(int new_capacity)           { if (new_capacity <= Capacity) return; T* new_data = (T*)IM_ALLOC((size_t)new_capacity * sizeof(T)); if (Data) { memcpy(new_data, Data, (size_t)Size * sizeof(T)); IM_FREE(Data); } Data = new_data; Capacity = new_capacity; }
+      |                                                                                                                                                                                      ^
+      |                                                                                                                                                                                      (void*)
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui.h:2093:189: warning: first argument in call to 'memcpy' is a pointer to non-trivially copyable type 'ImGuiTableTempData' [-Wnontrivial-memcall]
+ 2093 |     inline void         resize(int new_size, const T& v)    { if (new_size > Capacity) reserve(_grow_capacity(new_size)); if (new_size > Size) for (int n = Size; n < new_size; n++) memcpy(&Data[n], &v, sizeof(v)); Size = new_size; }
+      |                                                                                                                                                                                             ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src/imgui_tables.cpp:351:26: note: in instantiation of member function 'ImVector<ImGuiTableTempData>::resize' requested here
+  351 |         g.TablesTempData.resize(g.TablesTempDataStacked, ImGuiTableTempData());
+      |                          ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui.h:2093:189: note: explicitly cast the pointer to silence this warning
+ 2093 |     inline void         resize(int new_size, const T& v)    { if (new_size > Capacity) reserve(_grow_capacity(new_size)); if (new_size > Size) for (int n = Size; n < new_size; n++) memcpy(&Data[n], &v, sizeof(v)); Size = new_size; }
+      |                                                                                                                                                                                             ^
+      |                                                                                                                                                                                             (void*)
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui.h:2095:182: warning: first argument in call to 'memcpy' is a pointer to non-trivially copyable type 'ImGuiTableTempData' [-Wnontrivial-memcall]
+ 2095 |     inline void         reserve(int new_capacity)           { if (new_capacity <= Capacity) return; T* new_data = (T*)IM_ALLOC((size_t)new_capacity * sizeof(T)); if (Data) { memcpy(new_data, Data, (size_t)Size * sizeof(T)); IM_FREE(Data); } Data = new_data; Capacity = new_capacity; }
+      |                                                                                                                                                                                      ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui.h:2093:88: note: in instantiation of member function 'ImVector<ImGuiTableTempData>::reserve' requested here
+ 2093 |     inline void         resize(int new_size, const T& v)    { if (new_size > Capacity) reserve(_grow_capacity(new_size)); if (new_size > Size) for (int n = Size; n < new_size; n++) memcpy(&Data[n], &v, sizeof(v)); Size = new_size; }
+      |                                                                                        ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src/imgui_tables.cpp:351:26: note: in instantiation of member function 'ImVector<ImGuiTableTempData>::resize' requested here
+  351 |         g.TablesTempData.resize(g.TablesTempDataStacked, ImGuiTableTempData());
+      |                          ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui.h:2095:182: note: explicitly cast the pointer to silence this warning
+ 2095 |     inline void         reserve(int new_capacity)           { if (new_capacity <= Capacity) return; T* new_data = (T*)IM_ALLOC((size_t)new_capacity * sizeof(T)); if (Data) { memcpy(new_data, Data, (size_t)Size * sizeof(T)); IM_FREE(Data); } Data = new_data; Capacity = new_capacity; }
+      |                                                                                                                                                                                      ^
+      |                                                                                                                                                                                      (void*)
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui.h:2095:182: warning: first argument in call to 'memcpy' is a pointer to non-trivially copyable type 'ImDrawChannel' [-Wnontrivial-memcall]
+ 2095 |     inline void         reserve(int new_capacity)           { if (new_capacity <= Capacity) return; T* new_data = (T*)IM_ALLOC((size_t)new_capacity * sizeof(T)); if (Data) { memcpy(new_data, Data, (size_t)Size * sizeof(T)); IM_FREE(Data); } Data = new_data; Capacity = new_capacity; }
+      |                                                                                                                                                                                      ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui.h:2092:88: note: in instantiation of member function 'ImVector<ImDrawChannel>::reserve' requested here
+ 2092 |     inline void         resize(int new_size)                { if (new_size > Capacity) reserve(_grow_capacity(new_size)); Size = new_size; }
+      |                                                                                        ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src/imgui_tables.cpp:2603:39: note: in instantiation of member function 'ImVector<ImDrawChannel>::resize' requested here
+ 2603 |         g.DrawChannelsTempMergeBuffer.resize(splitter->_Count - LEADING_DRAW_CHANNELS); // Use shared temporary storage so the allocation gets amortized
+      |                                       ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui.h:2095:182: note: explicitly cast the pointer to silence this warning
+ 2095 |     inline void         reserve(int new_capacity)           { if (new_capacity <= Capacity) return; T* new_data = (T*)IM_ALLOC((size_t)new_capacity * sizeof(T)); if (Data) { memcpy(new_data, Data, (size_t)Size * sizeof(T)); IM_FREE(Data); } Data = new_data; Capacity = new_capacity; }
+      |                                                                                                                                                                                      ^
+      |                                                                                                                                                                                      (void*)
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui.h:2099:127: warning: first argument in call to 'memcpy' is a pointer to non-trivially copyable type 'ImGuiOldColumns' [-Wnontrivial-memcall]
+ 2099 |     inline void         push_back(const T& v)               { if (Size == Capacity) reserve(_grow_capacity(Size + 1)); memcpy(&Data[Size], &v, sizeof(v)); Size++; }
+      |                                                                                                                               ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src/imgui_tables.cpp:4201:28: note: in instantiation of member function 'ImVector<ImGuiOldColumns>::push_back' requested here
+ 4201 |     window->ColumnsStorage.push_back(ImGuiOldColumns());
+      |                            ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui.h:2099:127: note: explicitly cast the pointer to silence this warning
+ 2099 |     inline void         push_back(const T& v)               { if (Size == Capacity) reserve(_grow_capacity(Size + 1)); memcpy(&Data[Size], &v, sizeof(v)); Size++; }
+      |                                                                                                                               ^
+      |                                                                                                                               (void*)
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui.h:2095:182: warning: first argument in call to 'memcpy' is a pointer to non-trivially copyable type 'ImGuiOldColumns' [-Wnontrivial-memcall]
+ 2095 |     inline void         reserve(int new_capacity)           { if (new_capacity <= Capacity) return; T* new_data = (T*)IM_ALLOC((size_t)new_capacity * sizeof(T)); if (Data) { memcpy(new_data, Data, (size_t)Size * sizeof(T)); IM_FREE(Data); } Data = new_data; Capacity = new_capacity; }
+      |                                                                                                                                                                                      ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui.h:2099:85: note: in instantiation of member function 'ImVector<ImGuiOldColumns>::reserve' requested here
+ 2099 |     inline void         push_back(const T& v)               { if (Size == Capacity) reserve(_grow_capacity(Size + 1)); memcpy(&Data[Size], &v, sizeof(v)); Size++; }
+      |                                                                                     ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src/imgui_tables.cpp:4201:28: note: in instantiation of member function 'ImVector<ImGuiOldColumns>::push_back' requested here
+ 4201 |     window->ColumnsStorage.push_back(ImGuiOldColumns());
+      |                            ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui.h:2095:182: note: explicitly cast the pointer to silence this warning
+ 2095 |     inline void         reserve(int new_capacity)           { if (new_capacity <= Capacity) return; T* new_data = (T*)IM_ALLOC((size_t)new_capacity * sizeof(T)); if (Data) { memcpy(new_data, Data, (size_t)Size * sizeof(T)); IM_FREE(Data); } Data = new_data; Capacity = new_capacity; }
+      |                                                                                                                                                                                      ^
+      |                                                                                                                                                                                      (void*)
+20 warnings generated.
+[37/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/Common/Compression.cpp.obj
+[38/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/Common/DefaultIOStream.cpp.obj
+[39/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/Common/IOSystem.cpp.obj
+[40/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/Common/BaseProcess.cpp.obj
+[41/278] Building CXX object CMakeFiles/imgui.dir/_deps/imgui-src/imgui_demo.cpp.obj
+In file included from D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src/imgui_demo.cpp:106:
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui.h:2973:43: warning: first argument in call to 'memset' is a pointer to non-trivially copyable type 'ImDrawListSplitter' [-Wnontrivial-memcall]
+ 2973 |     inline ImDrawListSplitter()  { memset(this, 0, sizeof(*this)); }
+      |                                           ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui.h:2973:43: note: explicitly cast the pointer to silence this warning
+ 2973 |     inline ImDrawListSplitter()  { memset(this, 0, sizeof(*this)); }
+      |                                           ^
+      |                                           (void*)
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui.h:3044:60: warning: first argument in call to 'memset' is a pointer to non-trivially copyable type 'ImDrawList' [-Wnontrivial-memcall]
+ 3044 |     ImDrawList(ImDrawListSharedData* shared_data) { memset(this, 0, sizeof(*this)); _Data = shared_data; }
+      |                                                            ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui.h:3044:60: note: explicitly cast the pointer to silence this warning
+ 3044 |     ImDrawList(ImDrawListSharedData* shared_data) { memset(this, 0, sizeof(*this)); _Data = shared_data; }
+      |                                                            ^
+      |                                                            (void*)
+2 warnings generated.
+[42/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/Common/PostStepRegistry.cpp.obj
+[43/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/Common/BaseImporter.cpp.obj
+[44/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/Common/DefaultIOSystem.cpp.obj
+[45/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/Common/SGSpatialSort.cpp.obj
+[46/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/Common/VertexTriangleAdjacency.cpp.obj
+[47/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/Common/ZipArchiveIOSystem.cpp.obj
+[48/278] Building CXX object CMakeFiles/imgui.dir/_deps/imgui-src/imgui_widgets.cpp.obj
+In file included from D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src/imgui_widgets.cpp:43:
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui.h:2973:43: warning: first argument in call to 'memset' is a pointer to non-trivially copyable type 'ImDrawListSplitter' [-Wnontrivial-memcall]
+ 2973 |     inline ImDrawListSplitter()  { memset(this, 0, sizeof(*this)); }
+      |                                           ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui.h:2973:43: note: explicitly cast the pointer to silence this warning
+ 2973 |     inline ImDrawListSplitter()  { memset(this, 0, sizeof(*this)); }
+      |                                           ^
+      |                                           (void*)
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui.h:3044:60: warning: first argument in call to 'memset' is a pointer to non-trivially copyable type 'ImDrawList' [-Wnontrivial-memcall]
+ 3044 |     ImDrawList(ImDrawListSharedData* shared_data) { memset(this, 0, sizeof(*this)); _Data = shared_data; }
+      |                                                            ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui.h:3044:60: note: explicitly cast the pointer to silence this warning
+ 3044 |     ImDrawList(ImDrawListSharedData* shared_data) { memset(this, 0, sizeof(*this)); _Data = shared_data; }
+      |                                                            ^
+      |                                                            (void*)
+In file included from D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src/imgui_widgets.cpp:45:
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui_internal.h:807:54: warning: first argument in call to 'memset' is a pointer to non-trivially copyable type 'ImDrawDataBuilder' [-Wnontrivial-memcall]
+  807 |     ImDrawDataBuilder()                     { memset(this, 0, sizeof(*this)); }
+      |                                                      ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui_internal.h:807:54: note: explicitly cast the pointer to silence this warning
+  807 |     ImDrawDataBuilder()                     { memset(this, 0, sizeof(*this)); }
+      |                                                      ^
+      |                                                      (void*)
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui_internal.h:1108:50: warning: first argument in call to 'memset' is a pointer to non-trivially copyable type 'ImGuiInputTextDeactivatedState' [-Wnontrivial-memcall]
+ 1108 |     ImGuiInputTextDeactivatedState()    { memset(this, 0, sizeof(*this)); }
+      |                                                  ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui_internal.h:1108:50: note: explicitly cast the pointer to silence this warning
+ 1108 |     ImGuiInputTextDeactivatedState()    { memset(this, 0, sizeof(*this)); }
+      |                                                  ^
+      |                                                  (void*)
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui_internal.h:1134:54: warning: first argument in call to 'memset' is a pointer to non-trivially copyable type 'ImGuiInputTextState' [-Wnontrivial-memcall]
+ 1134 |     ImGuiInputTextState()                   { memset(this, 0, sizeof(*this)); }
+      |                                                      ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui_internal.h:1134:54: note: explicitly cast the pointer to silence this warning
+ 1134 |     ImGuiInputTextState()                   { memset(this, 0, sizeof(*this)); }
+      |                                                      ^
+      |                                                      (void*)
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui_internal.h:1526:46: warning: first argument in call to 'memset' is a pointer to non-trivially copyable type 'ImGuiListClipperData' [-Wnontrivial-memcall]
+ 1526 |     ImGuiListClipperData()          { memset(this, 0, sizeof(*this)); }
+      |                                              ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui_internal.h:1526:46: note: explicitly cast the pointer to silence this warning
+ 1526 |     ImGuiListClipperData()          { memset(this, 0, sizeof(*this)); }
+      |                                              ^
+      |                                              (void*)
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui_internal.h:1710:34: warning: first argument in call to 'memset' is a pointer to non-trivially copyable type 'ImGuiOldColumns' [-Wnontrivial-memcall]
+ 1710 |     ImGuiOldColumns()   { memset(this, 0, sizeof(*this)); }
+      |                                  ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui_internal.h:1710:34: note: explicitly cast the pointer to silence this warning
+ 1710 |     ImGuiOldColumns()   { memset(this, 0, sizeof(*this)); }
+      |                                  ^
+      |                                  (void*)
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui_internal.h:1966:38: warning: first argument in call to 'memset' is a pointer to non-trivially copyable type 'ImGuiIDStackTool' [-Wnontrivial-memcall]
+ 1966 |     ImGuiIDStackTool()      { memset(this, 0, sizeof(*this)); CopyToClipboardLastTime = -FLT_MAX; }
+      |                                      ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui_internal.h:1966:38: note: explicitly cast the pointer to silence this warning
+ 1966 |     ImGuiIDStackTool()      { memset(this, 0, sizeof(*this)); CopyToClipboardLastTime = -FLT_MAX; }
+      |                                      ^
+      |                                      (void*)
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui_internal.h:3019:42: warning: first argument in call to 'memset' is a pointer to non-trivially copyable type 'ImGuiTable' [-Wnontrivial-memcall]
+ 3019 |     ImGuiTable()                { memset(this, 0, sizeof(*this)); LastFrameActive = -1; }
+      |                                          ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui_internal.h:3019:42: note: explicitly cast the pointer to silence this warning
+ 3019 |     ImGuiTable()                { memset(this, 0, sizeof(*this)); LastFrameActive = -1; }
+      |                                          ^
+      |                                          (void*)
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui_internal.h:3047:42: warning: first argument in call to 'memset' is a pointer to non-trivially copyable type 'ImGuiTableTempData' [-Wnontrivial-memcall]
+ 3047 |     ImGuiTableTempData()        { memset(this, 0, sizeof(*this)); LastTimeActive = -1.0f; }
+      |                                          ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui_internal.h:3047:42: note: explicitly cast the pointer to silence this warning
+ 3047 |     ImGuiTableTempData()        { memset(this, 0, sizeof(*this)); LastTimeActive = -1.0f; }
+      |                                          ^
+      |                                          (void*)
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src/imgui_widgets.cpp:8999:12: warning: first argument in call to 'memset' is a pointer to non-trivially copyable type 'ImGuiTabBar' [-Wnontrivial-memcall]
+ 8999 |     memset(this, 0, sizeof(*this));
+      |            ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src/imgui_widgets.cpp:8999:12: note: explicitly cast the pointer to silence this warning
+ 8999 |     memset(this, 0, sizeof(*this));
+      |            ^
+      |            (void*)
+In file included from D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src/imgui_widgets.cpp:43:
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui.h:2093:189: warning: first argument in call to 'memcpy' is a pointer to non-trivially copyable type 'ImGuiMultiSelectTempData' [-Wnontrivial-memcall]
+ 2093 |     inline void         resize(int new_size, const T& v)    { if (new_size > Capacity) reserve(_grow_capacity(new_size)); if (new_size > Size) for (int n = Size; n < new_size; n++) memcpy(&Data[n], &v, sizeof(v)); Size = new_size; }
+      |                                                                                                                                                                                             ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src/imgui_widgets.cpp:7361:31: note: in instantiation of member function 'ImVector<ImGuiMultiSelectTempData>::resize' requested here
+ 7361 |         g.MultiSelectTempData.resize(g.MultiSelectTempDataStacked, ImGuiMultiSelectTempData());
+      |                               ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui.h:2093:189: note: explicitly cast the pointer to silence this warning
+ 2093 |     inline void         resize(int new_size, const T& v)    { if (new_size > Capacity) reserve(_grow_capacity(new_size)); if (new_size > Size) for (int n = Size; n < new_size; n++) memcpy(&Data[n], &v, sizeof(v)); Size = new_size; }
+      |                                                                                                                                                                                             ^
+      |                                                                                                                                                                                             (void*)
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui.h:2095:182: warning: first argument in call to 'memcpy' is a pointer to non-trivially copyable type 'ImGuiMultiSelectTempData' [-Wnontrivial-memcall]
+ 2095 |     inline void         reserve(int new_capacity)           { if (new_capacity <= Capacity) return; T* new_data = (T*)IM_ALLOC((size_t)new_capacity * sizeof(T)); if (Data) { memcpy(new_data, Data, (size_t)Size * sizeof(T)); IM_FREE(Data); } Data = new_data; Capacity = new_capacity; }
+      |                                                                                                                                                                                      ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui.h:2093:88: note: in instantiation of member function 'ImVector<ImGuiMultiSelectTempData>::reserve' requested here
+ 2093 |     inline void         resize(int new_size, const T& v)    { if (new_size > Capacity) reserve(_grow_capacity(new_size)); if (new_size > Size) for (int n = Size; n < new_size; n++) memcpy(&Data[n], &v, sizeof(v)); Size = new_size; }
+      |                                                                                        ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src/imgui_widgets.cpp:7361:31: note: in instantiation of member function 'ImVector<ImGuiMultiSelectTempData>::resize' requested here
+ 7361 |         g.MultiSelectTempData.resize(g.MultiSelectTempDataStacked, ImGuiMultiSelectTempData());
+      |                               ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui.h:2095:182: note: explicitly cast the pointer to silence this warning
+ 2095 |     inline void         reserve(int new_capacity)           { if (new_capacity <= Capacity) return; T* new_data = (T*)IM_ALLOC((size_t)new_capacity * sizeof(T)); if (Data) { memcpy(new_data, Data, (size_t)Size * sizeof(T)); IM_FREE(Data); } Data = new_data; Capacity = new_capacity; }
+      |                                                                                                                                                                                      ^
+      |                                                                                                                                                                                      (void*)
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui.h:2095:182: warning: first argument in call to 'memcpy' is a pointer to non-trivially copyable type 'ImGuiTabBar' [-Wnontrivial-memcall]
+ 2095 |     inline void         reserve(int new_capacity)           { if (new_capacity <= Capacity) return; T* new_data = (T*)IM_ALLOC((size_t)new_capacity * sizeof(T)); if (Data) { memcpy(new_data, Data, (size_t)Size * sizeof(T)); IM_FREE(Data); } Data = new_data; Capacity = new_capacity; }
+      |                                                                                                                                                                                      ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui.h:2092:88: note: in instantiation of member function 'ImVector<ImGuiTabBar>::reserve' requested here
+ 2092 |     inline void         resize(int new_size)                { if (new_size > Capacity) reserve(_grow_capacity(new_size)); Size = new_size; }
+      |                                                                                        ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui_internal.h:695:101: note: in instantiation of member function 'ImVector<ImGuiTabBar>::resize' requested here
+  695 |     T*          Add()                               { int idx = FreeIdx; if (idx == Buf.Size) { Buf.resize(Buf.Size + 1); FreeIdx++; } else { FreeIdx = *(int*)&Buf[idx]; } IM_PLACEMENT_NEW(&Buf[idx]) T(); AliveCount++; return &Buf[idx]; }
+      |                                                                                                     ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui_internal.h:692:156: note: in instantiation of member function 'ImPool<ImGuiTabBar>::Add' requested here
+  692 |     T*          GetOrAddByKey(ImGuiID key)          { int* p_idx = Map.GetIntRef(key, -1); if (*p_idx != -1) return &Buf[*p_idx]; *p_idx = FreeIdx; return Add(); }
+      |                                                                                                                                                            ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src/imgui_widgets.cpp:9049:38: note: in instantiation of member function 'ImPool<ImGuiTabBar>::GetOrAddByKey' requested here
+ 9049 |     ImGuiTabBar* tab_bar = g.TabBars.GetOrAddByKey(id);
+      |                                      ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui.h:2095:182: note: explicitly cast the pointer to silence this warning
+ 2095 |     inline void         reserve(int new_capacity)           { if (new_capacity <= Capacity) return; T* new_data = (T*)IM_ALLOC((size_t)new_capacity * sizeof(T)); if (Data) { memcpy(new_data, Data, (size_t)Size * sizeof(T)); IM_FREE(Data); } Data = new_data; Capacity = new_capacity; }
+      |                                                                                                                                                                                      ^
+      |                                                                                                                                                                                      (void*)
+14 warnings generated.
+[49/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/Common/SpatialSort.cpp.obj
+[50/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/Common/ScenePreprocessor.cpp.obj
+[51/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/Common/Assimp.cpp.obj
+In file included from D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/code/Common/Assimp.cpp:1291:
+In file included from D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/code\Common/StbCommon.h:51:
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/code/../contrib\stb/stb_image.h:699:12: warning: unused function 'stbi__cpuid3' [-Wunused-function]
+  699 | static int stbi__cpuid3(void)
+      |            ^~~~~~~~~~~~
+1 warning generated.
+[52/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/Common/TargetAnimation.cpp.obj
+[53/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/Common/RemoveComments.cpp.obj
+[54/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/Common/simd.cpp.obj
+[55/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/Common/Bitmap.cpp.obj
+[56/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/Common/scene.cpp.obj
+[57/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/Common/StandardShapes.cpp.obj
+[58/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/Common/SkeletonMeshBuilder.cpp.obj
+[59/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/Common/Importer.cpp.obj
+[60/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/Common/SceneCombiner.cpp.obj
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/code/Common/SceneCombiner.cpp:987:14: warning: first argument in call to 'memcpy' is a pointer to non-trivially copyable type 'aiFace' [-Wnontrivial-memcall]
+  987 |     ::memcpy(dest, old, sizeof(Type) * num);
+      |              ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/code/Common/SceneCombiner.cpp:1096:5: note: in instantiation of function template specialization 'Assimp::GetArrayCopy<aiFace>' requested here
+ 1096 |     GetArrayCopy(dest->mFaces, dest->mNumFaces);
+      |     ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/code/Common/SceneCombiner.cpp:987:14: note: explicitly cast the pointer to silence this warning
+  987 |     ::memcpy(dest, old, sizeof(Type) * num);
+      |              ^
+      |              (void*)
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/code/Common/SceneCombiner.cpp:987:14: warning: first argument in call to 'memcpy' is a pointer to non-trivially copyable type 'aiMeshMorphKey' [-Wnontrivial-memcall]
+  987 |     ::memcpy(dest, old, sizeof(Type) * num);
+      |              ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/code/Common/SceneCombiner.cpp:1244:5: note: in instantiation of function template specialization 'Assimp::GetArrayCopy<aiMeshMorphKey>' requested here
+ 1244 |     GetArrayCopy(dest->mKeys, dest->mNumKeys);
+      |     ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/code/Common/SceneCombiner.cpp:987:14: note: explicitly cast the pointer to silence this warning
+  987 |     ::memcpy(dest, old, sizeof(Type) * num);
+      |              ^
+      |              (void*)
+2 warnings generated.
+[61/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/Common/Subdivision.cpp.obj
+[62/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/Common/Version.cpp.obj
+[63/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/Common/CreateAnimMesh.cpp.obj
+[64/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/Common/material.cpp.obj
+[65/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/Common/AssertHandler.cpp.obj
+[66/278] Building CXX object CMakeFiles/imgui.dir/_deps/imgui-src/imgui.cpp.obj
+In file included from D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src/imgui.cpp:1023:
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui.h:2973:43: warning: first argument in call to 'memset' is a pointer to non-trivially copyable type 'ImDrawListSplitter' [-Wnontrivial-memcall]
+ 2973 |     inline ImDrawListSplitter()  { memset(this, 0, sizeof(*this)); }
+      |                                           ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui.h:2973:43: note: explicitly cast the pointer to silence this warning
+ 2973 |     inline ImDrawListSplitter()  { memset(this, 0, sizeof(*this)); }
+      |                                           ^
+      |                                           (void*)
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui.h:3044:60: warning: first argument in call to 'memset' is a pointer to non-trivially copyable type 'ImDrawList' [-Wnontrivial-memcall]
+ 3044 |     ImDrawList(ImDrawListSharedData* shared_data) { memset(this, 0, sizeof(*this)); _Data = shared_data; }
+      |                                                            ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui.h:3044:60: note: explicitly cast the pointer to silence this warning
+ 3044 |     ImDrawList(ImDrawListSharedData* shared_data) { memset(this, 0, sizeof(*this)); _Data = shared_data; }
+      |                                                            ^
+      |                                                            (void*)
+In file included from D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src/imgui.cpp:1025:
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui_internal.h:807:54: warning: first argument in call to 'memset' is a pointer to non-trivially copyable type 'ImDrawDataBuilder' [-Wnontrivial-memcall]
+  807 |     ImDrawDataBuilder()                     { memset(this, 0, sizeof(*this)); }
+      |                                                      ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui_internal.h:807:54: note: explicitly cast the pointer to silence this warning
+  807 |     ImDrawDataBuilder()                     { memset(this, 0, sizeof(*this)); }
+      |                                                      ^
+      |                                                      (void*)
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui_internal.h:1108:50: warning: first argument in call to 'memset' is a pointer to non-trivially copyable type 'ImGuiInputTextDeactivatedState' [-Wnontrivial-memcall]
+ 1108 |     ImGuiInputTextDeactivatedState()    { memset(this, 0, sizeof(*this)); }
+      |                                                  ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui_internal.h:1108:50: note: explicitly cast the pointer to silence this warning
+ 1108 |     ImGuiInputTextDeactivatedState()    { memset(this, 0, sizeof(*this)); }
+      |                                                  ^
+      |                                                  (void*)
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui_internal.h:1134:54: warning: first argument in call to 'memset' is a pointer to non-trivially copyable type 'ImGuiInputTextState' [-Wnontrivial-memcall]
+ 1134 |     ImGuiInputTextState()                   { memset(this, 0, sizeof(*this)); }
+      |                                                      ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui_internal.h:1134:54: note: explicitly cast the pointer to silence this warning
+ 1134 |     ImGuiInputTextState()                   { memset(this, 0, sizeof(*this)); }
+      |                                                      ^
+      |                                                      (void*)
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui_internal.h:1526:46: warning: first argument in call to 'memset' is a pointer to non-trivially copyable type 'ImGuiListClipperData' [-Wnontrivial-memcall]
+ 1526 |     ImGuiListClipperData()          { memset(this, 0, sizeof(*this)); }
+      |                                              ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui_internal.h:1526:46: note: explicitly cast the pointer to silence this warning
+ 1526 |     ImGuiListClipperData()          { memset(this, 0, sizeof(*this)); }
+      |                                              ^
+      |                                              (void*)
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui_internal.h:1710:34: warning: first argument in call to 'memset' is a pointer to non-trivially copyable type 'ImGuiOldColumns' [-Wnontrivial-memcall]
+ 1710 |     ImGuiOldColumns()   { memset(this, 0, sizeof(*this)); }
+      |                                  ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui_internal.h:1710:34: note: explicitly cast the pointer to silence this warning
+ 1710 |     ImGuiOldColumns()   { memset(this, 0, sizeof(*this)); }
+      |                                  ^
+      |                                  (void*)
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui_internal.h:1966:38: warning: first argument in call to 'memset' is a pointer to non-trivially copyable type 'ImGuiIDStackTool' [-Wnontrivial-memcall]
+ 1966 |     ImGuiIDStackTool()      { memset(this, 0, sizeof(*this)); CopyToClipboardLastTime = -FLT_MAX; }
+      |                                      ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui_internal.h:1966:38: note: explicitly cast the pointer to silence this warning
+ 1966 |     ImGuiIDStackTool()      { memset(this, 0, sizeof(*this)); CopyToClipboardLastTime = -FLT_MAX; }
+      |                                      ^
+      |                                      (void*)
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui_internal.h:3019:42: warning: first argument in call to 'memset' is a pointer to non-trivially copyable type 'ImGuiTable' [-Wnontrivial-memcall]
+ 3019 |     ImGuiTable()                { memset(this, 0, sizeof(*this)); LastFrameActive = -1; }
+      |                                          ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui_internal.h:3019:42: note: explicitly cast the pointer to silence this warning
+ 3019 |     ImGuiTable()                { memset(this, 0, sizeof(*this)); LastFrameActive = -1; }
+      |                                          ^
+      |                                          (void*)
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui_internal.h:3047:42: warning: first argument in call to 'memset' is a pointer to non-trivially copyable type 'ImGuiTableTempData' [-Wnontrivial-memcall]
+ 3047 |     ImGuiTableTempData()        { memset(this, 0, sizeof(*this)); LastTimeActive = -1.0f; }
+      |                                          ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui_internal.h:3047:42: note: explicitly cast the pointer to silence this warning
+ 3047 |     ImGuiTableTempData()        { memset(this, 0, sizeof(*this)); LastTimeActive = -1.0f; }
+      |                                          ^
+      |                                          (void*)
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src/imgui.cpp:1345:12: warning: first argument in call to 'memset' is a pointer to non-trivially copyable type 'ImGuiIO' [-Wnontrivial-memcall]
+ 1345 |     memset(this, 0, sizeof(*this));
+      |            ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src/imgui.cpp:1345:12: note: explicitly cast the pointer to silence this warning
+ 1345 |     memset(this, 0, sizeof(*this));
+      |            ^
+      |            (void*)
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src/imgui.cpp:2931:12: warning: first argument in call to 'memset' is a pointer to non-trivially copyable type 'ImGuiListClipper' [-Wnontrivial-memcall]
+ 2931 |     memset(this, 0, sizeof(*this));
+      |            ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src/imgui.cpp:2931:12: note: explicitly cast the pointer to silence this warning
+ 2931 |     memset(this, 0, sizeof(*this));
+      |            ^
+      |            (void*)
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src/imgui.cpp:3920:12: warning: first argument in call to 'memset' is a pointer to non-trivially copyable type 'ImGuiWindow' [-Wnontrivial-memcall]
+ 3920 |     memset(this, 0, sizeof(*this));
+      |            ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src/imgui.cpp:3920:12: note: explicitly cast the pointer to silence this warning
+ 3920 |     memset(this, 0, sizeof(*this));
+      |            ^
+      |            (void*)
+In file included from D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src/imgui.cpp:1023:
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui.h:2093:189: warning: first argument in call to 'memcpy' is a pointer to non-trivially copyable type 'ImGuiListClipperData' [-Wnontrivial-memcall]
+ 2093 |     inline void         resize(int new_size, const T& v)    { if (new_size > Capacity) reserve(_grow_capacity(new_size)); if (new_size > Size) for (int n = Size; n < new_size; n++) memcpy(&Data[n], &v, sizeof(v)); Size = new_size; }
+      |                                                                                                                                                                                             ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src/imgui.cpp:2960:27: note: in instantiation of member function 'ImVector<ImGuiListClipperData>::resize' requested here
+ 2960 |         g.ClipperTempData.resize(g.ClipperTempDataStacked, ImGuiListClipperData());
+      |                           ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui.h:2093:189: note: explicitly cast the pointer to silence this warning
+ 2093 |     inline void         resize(int new_size, const T& v)    { if (new_size > Capacity) reserve(_grow_capacity(new_size)); if (new_size > Size) for (int n = Size; n < new_size; n++) memcpy(&Data[n], &v, sizeof(v)); Size = new_size; }
+      |                                                                                                                                                                                             ^
+      |                                                                                                                                                                                             (void*)
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui.h:2095:182: warning: first argument in call to 'memcpy' is a pointer to non-trivially copyable type 'ImGuiListClipperData' [-Wnontrivial-memcall]
+ 2095 |     inline void         reserve(int new_capacity)           { if (new_capacity <= Capacity) return; T* new_data = (T*)IM_ALLOC((size_t)new_capacity * sizeof(T)); if (Data) { memcpy(new_data, Data, (size_t)Size * sizeof(T)); IM_FREE(Data); } Data = new_data; Capacity = new_capacity; }
+      |                                                                                                                                                                                      ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui.h:2093:88: note: in instantiation of member function 'ImVector<ImGuiListClipperData>::reserve' requested here
+ 2093 |     inline void         resize(int new_size, const T& v)    { if (new_size > Capacity) reserve(_grow_capacity(new_size)); if (new_size > Size) for (int n = Size; n < new_size; n++) memcpy(&Data[n], &v, sizeof(v)); Size = new_size; }
+      |                                                                                        ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src/imgui.cpp:2960:27: note: in instantiation of member function 'ImVector<ImGuiListClipperData>::resize' requested here
+ 2960 |         g.ClipperTempData.resize(g.ClipperTempDataStacked, ImGuiListClipperData());
+      |                           ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui.h:2095:182: note: explicitly cast the pointer to silence this warning
+ 2095 |     inline void         reserve(int new_capacity)           { if (new_capacity <= Capacity) return; T* new_data = (T*)IM_ALLOC((size_t)new_capacity * sizeof(T)); if (Data) { memcpy(new_data, Data, (size_t)Size * sizeof(T)); IM_FREE(Data); } Data = new_data; Capacity = new_capacity; }
+      |                                                                                                                                                                                      ^
+      |                                                                                                                                                                                      (void*)
+15 warnings generated.
+[67/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/Common/Exceptional.cpp.obj
+[68/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/Common/ImporterRegistry.cpp.obj
+[69/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/Common/Base64.cpp.obj
+[70/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/CApi/AssimpCExport.cpp.obj
+[71/278] Building CXX object CMakeFiles/imgui.dir/_deps/imgui-src/imgui_draw.cpp.obj
+In file included from D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src/imgui_draw.cpp:34:
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui.h:2973:43: warning: first argument in call to 'memset' is a pointer to non-trivially copyable type 'ImDrawListSplitter' [-Wnontrivial-memcall]
+ 2973 |     inline ImDrawListSplitter()  { memset(this, 0, sizeof(*this)); }
+      |                                           ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui.h:2973:43: note: explicitly cast the pointer to silence this warning
+ 2973 |     inline ImDrawListSplitter()  { memset(this, 0, sizeof(*this)); }
+      |                                           ^
+      |                                           (void*)
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui.h:3044:60: warning: first argument in call to 'memset' is a pointer to non-trivially copyable type 'ImDrawList' [-Wnontrivial-memcall]
+ 3044 |     ImDrawList(ImDrawListSharedData* shared_data) { memset(this, 0, sizeof(*this)); _Data = shared_data; }
+      |                                                            ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui.h:3044:60: note: explicitly cast the pointer to silence this warning
+ 3044 |     ImDrawList(ImDrawListSharedData* shared_data) { memset(this, 0, sizeof(*this)); _Data = shared_data; }
+      |                                                            ^
+      |                                                            (void*)
+In file included from D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src/imgui_draw.cpp:36:
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui_internal.h:807:54: warning: first argument in call to 'memset' is a pointer to non-trivially copyable type 'ImDrawDataBuilder' [-Wnontrivial-memcall]
+  807 |     ImDrawDataBuilder()                     { memset(this, 0, sizeof(*this)); }
+      |                                                      ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui_internal.h:807:54: note: explicitly cast the pointer to silence this warning
+  807 |     ImDrawDataBuilder()                     { memset(this, 0, sizeof(*this)); }
+      |                                                      ^
+      |                                                      (void*)
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui_internal.h:1108:50: warning: first argument in call to 'memset' is a pointer to non-trivially copyable type 'ImGuiInputTextDeactivatedState' [-Wnontrivial-memcall]
+ 1108 |     ImGuiInputTextDeactivatedState()    { memset(this, 0, sizeof(*this)); }
+      |                                                  ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui_internal.h:1108:50: note: explicitly cast the pointer to silence this warning
+ 1108 |     ImGuiInputTextDeactivatedState()    { memset(this, 0, sizeof(*this)); }
+      |                                                  ^
+      |                                                  (void*)
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui_internal.h:1134:54: warning: first argument in call to 'memset' is a pointer to non-trivially copyable type 'ImGuiInputTextState' [-Wnontrivial-memcall]
+ 1134 |     ImGuiInputTextState()                   { memset(this, 0, sizeof(*this)); }
+      |                                                      ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui_internal.h:1134:54: note: explicitly cast the pointer to silence this warning
+ 1134 |     ImGuiInputTextState()                   { memset(this, 0, sizeof(*this)); }
+      |                                                      ^
+      |                                                      (void*)
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui_internal.h:1526:46: warning: first argument in call to 'memset' is a pointer to non-trivially copyable type 'ImGuiListClipperData' [-Wnontrivial-memcall]
+ 1526 |     ImGuiListClipperData()          { memset(this, 0, sizeof(*this)); }
+      |                                              ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui_internal.h:1526:46: note: explicitly cast the pointer to silence this warning
+ 1526 |     ImGuiListClipperData()          { memset(this, 0, sizeof(*this)); }
+      |                                              ^
+      |                                              (void*)
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui_internal.h:1710:34: warning: first argument in call to 'memset' is a pointer to non-trivially copyable type 'ImGuiOldColumns' [-Wnontrivial-memcall]
+ 1710 |     ImGuiOldColumns()   { memset(this, 0, sizeof(*this)); }
+      |                                  ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui_internal.h:1710:34: note: explicitly cast the pointer to silence this warning
+ 1710 |     ImGuiOldColumns()   { memset(this, 0, sizeof(*this)); }
+      |                                  ^
+      |                                  (void*)
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui_internal.h:1966:38: warning: first argument in call to 'memset' is a pointer to non-trivially copyable type 'ImGuiIDStackTool' [-Wnontrivial-memcall]
+ 1966 |     ImGuiIDStackTool()      { memset(this, 0, sizeof(*this)); CopyToClipboardLastTime = -FLT_MAX; }
+      |                                      ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui_internal.h:1966:38: note: explicitly cast the pointer to silence this warning
+ 1966 |     ImGuiIDStackTool()      { memset(this, 0, sizeof(*this)); CopyToClipboardLastTime = -FLT_MAX; }
+      |                                      ^
+      |                                      (void*)
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui_internal.h:3019:42: warning: first argument in call to 'memset' is a pointer to non-trivially copyable type 'ImGuiTable' [-Wnontrivial-memcall]
+ 3019 |     ImGuiTable()                { memset(this, 0, sizeof(*this)); LastFrameActive = -1; }
+      |                                          ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui_internal.h:3019:42: note: explicitly cast the pointer to silence this warning
+ 3019 |     ImGuiTable()                { memset(this, 0, sizeof(*this)); LastFrameActive = -1; }
+      |                                          ^
+      |                                          (void*)
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui_internal.h:3047:42: warning: first argument in call to 'memset' is a pointer to non-trivially copyable type 'ImGuiTableTempData' [-Wnontrivial-memcall]
+ 3047 |     ImGuiTableTempData()        { memset(this, 0, sizeof(*this)); LastTimeActive = -1.0f; }
+      |                                          ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui_internal.h:3047:42: note: explicitly cast the pointer to silence this warning
+ 3047 |     ImGuiTableTempData()        { memset(this, 0, sizeof(*this)); LastTimeActive = -1.0f; }
+      |                                          ^
+      |                                          (void*)
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src/imgui_draw.cpp:372:12: warning: first argument in call to 'memset' is a pointer to non-trivially copyable type 'ImDrawListSharedData' [-Wnontrivial-memcall]
+  372 |     memset(this, 0, sizeof(*this));
+      |            ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src/imgui_draw.cpp:372:12: note: explicitly cast the pointer to silence this warning
+  372 |     memset(this, 0, sizeof(*this));
+      |            ^
+      |            (void*)
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src/imgui_draw.cpp:2037:20: warning: first argument in call to 'memset' is a pointer to non-trivially copyable type 'ImDrawChannel' [-Wnontrivial-memcall]
+ 2037 |             memset(&_Channels[i], 0, sizeof(_Channels[i]));  // Current channel is a copy of CmdBuffer/IdxBuffer, don't destruct again
+      |                    ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src/imgui_draw.cpp:2037:20: note: explicitly cast the pointer to silence this warning
+ 2037 |             memset(&_Channels[i], 0, sizeof(_Channels[i]));  // Current channel is a copy of CmdBuffer/IdxBuffer, don't destruct again
+      |                    ^
+      |                    (void*)
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src/imgui_draw.cpp:2061:12: warning: first argument in call to 'memset' is a pointer to non-trivially copyable type 'ImDrawChannel' [-Wnontrivial-memcall]
+ 2061 |     memset(&_Channels[0], 0, sizeof(ImDrawChannel));
+      |            ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src/imgui_draw.cpp:2061:12: note: explicitly cast the pointer to silence this warning
+ 2061 |     memset(&_Channels[0], 0, sizeof(ImDrawChannel));
+      |            ^
+      |            (void*)
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src/imgui_draw.cpp:2154:12: warning: first argument in call to 'memcpy' is a pointer to non-trivially copyable type 'ImVector<ImDrawCmd>' [-Wnontrivial-memcall]
+ 2154 |     memcpy(&_Channels.Data[_Current]._CmdBuffer, &draw_list->CmdBuffer, sizeof(draw_list->CmdBuffer));
+      |            ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src/imgui_draw.cpp:2154:12: note: explicitly cast the pointer to silence this warning
+ 2154 |     memcpy(&_Channels.Data[_Current]._CmdBuffer, &draw_list->CmdBuffer, sizeof(draw_list->CmdBuffer));
+      |            ^
+      |            (void*)
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src/imgui_draw.cpp:2155:12: warning: first argument in call to 'memcpy' is a pointer to non-trivially copyable type 'ImVector<ImDrawIdx>' (aka 'ImVector<unsigned short>') [-Wnontrivial-memcall]
+ 2155 |     memcpy(&_Channels.Data[_Current]._IdxBuffer, &draw_list->IdxBuffer, sizeof(draw_list->IdxBuffer));
+      |            ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src/imgui_draw.cpp:2155:12: note: explicitly cast the pointer to silence this warning
+ 2155 |     memcpy(&_Channels.Data[_Current]._IdxBuffer, &draw_list->IdxBuffer, sizeof(draw_list->IdxBuffer));
+      |            ^
+      |            (void*)
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src/imgui_draw.cpp:2157:12: warning: first argument in call to 'memcpy' is a pointer to non-trivially copyable type 'ImVector<ImDrawCmd>' [-Wnontrivial-memcall]
+ 2157 |     memcpy(&draw_list->CmdBuffer, &_Channels.Data[idx]._CmdBuffer, sizeof(draw_list->CmdBuffer));
+      |            ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src/imgui_draw.cpp:2157:12: note: explicitly cast the pointer to silence this warning
+ 2157 |     memcpy(&draw_list->CmdBuffer, &_Channels.Data[idx]._CmdBuffer, sizeof(draw_list->CmdBuffer));
+      |            ^
+      |            (void*)
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src/imgui_draw.cpp:2158:12: warning: first argument in call to 'memcpy' is a pointer to non-trivially copyable type 'ImVector<ImDrawIdx>' (aka 'ImVector<unsigned short>') [-Wnontrivial-memcall]
+ 2158 |     memcpy(&draw_list->IdxBuffer, &_Channels.Data[idx]._IdxBuffer, sizeof(draw_list->IdxBuffer));
+      |            ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src/imgui_draw.cpp:2158:12: note: explicitly cast the pointer to silence this warning
+ 2158 |     memcpy(&draw_list->IdxBuffer, &_Channels.Data[idx]._IdxBuffer, sizeof(draw_list->IdxBuffer));
+      |            ^
+      |            (void*)
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src/imgui_draw.cpp:2394:12: warning: first argument in call to 'memset' is a pointer to non-trivially copyable type 'ImFontAtlas' [-Wnontrivial-memcall]
+ 2394 |     memset(this, 0, sizeof(*this));
+      |            ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src/imgui_draw.cpp:2394:12: note: explicitly cast the pointer to silence this warning
+ 2394 |     memset(this, 0, sizeof(*this));
+      |            ^
+      |            (void*)
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src/imgui_draw.cpp:2783:26: warning: first argument in call to 'memset' is a pointer to non-trivially copyable type 'ImFontBuildSrcData' [-Wnontrivial-memcall]
+ 2783 |     memset(src_tmp_array.Data, 0, (size_t)src_tmp_array.size_in_bytes());
+      |                          ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src/imgui_draw.cpp:2783:26: note: explicitly cast the pointer to silence this warning
+ 2783 |     memset(src_tmp_array.Data, 0, (size_t)src_tmp_array.size_in_bytes());
+      |                          ^
+      |            (void*)
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src/imgui_draw.cpp:2784:26: warning: first argument in call to 'memset' is a pointer to non-trivially copyable type 'ImFontBuildDstData' [-Wnontrivial-memcall]
+ 2784 |     memset(dst_tmp_array.Data, 0, (size_t)dst_tmp_array.size_in_bytes());
+      |                          ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src/imgui_draw.cpp:2784:26: note: explicitly cast the pointer to silence this warning
+ 2784 |     memset(dst_tmp_array.Data, 0, (size_t)dst_tmp_array.size_in_bytes());
+      |                          ^
+      |            (void*)
+In file included from D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src/imgui_draw.cpp:34:
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui.h:2095:182: warning: first argument in call to 'memcpy' is a pointer to non-trivially copyable type 'ImDrawChannel' [-Wnontrivial-memcall]
+ 2095 |     inline void         reserve(int new_capacity)           { if (new_capacity <= Capacity) return; T* new_data = (T*)IM_ALLOC((size_t)new_capacity * sizeof(T)); if (Data) { memcpy(new_data, Data, (size_t)Size * sizeof(T)); IM_FREE(Data); } Data = new_data; Capacity = new_capacity; }
+      |                                                                                                                                                                                      ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src/imgui_draw.cpp:2053:19: note: in instantiation of member function 'ImVector<ImDrawChannel>::reserve' requested here
+ 2053 |         _Channels.reserve(channels_count); // Avoid over reserving since this is likely to stay stable
+      |                   ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui.h:2095:182: note: explicitly cast the pointer to silence this warning
+ 2095 |     inline void         reserve(int new_capacity)           { if (new_capacity <= Capacity) return; T* new_data = (T*)IM_ALLOC((size_t)new_capacity * sizeof(T)); if (Data) { memcpy(new_data, Data, (size_t)Size * sizeof(T)); IM_FREE(Data); } Data = new_data; Capacity = new_capacity; }
+      |                                                                                                                                                                                      ^
+      |                                                                                                                                                                                      (void*)
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui.h:2095:182: warning: first argument in call to 'memcpy' is a pointer to non-trivially copyable type 'ImFontBuildSrcData' [-Wnontrivial-memcall]
+ 2095 |     inline void         reserve(int new_capacity)           { if (new_capacity <= Capacity) return; T* new_data = (T*)IM_ALLOC((size_t)new_capacity * sizeof(T)); if (Data) { memcpy(new_data, Data, (size_t)Size * sizeof(T)); IM_FREE(Data); } Data = new_data; Capacity = new_capacity; }
+      |                                                                                                                                                                                      ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui.h:2092:88: note: in instantiation of member function 'ImVector<ImFontBuildSrcData>::reserve' requested here
+ 2092 |     inline void         resize(int new_size)                { if (new_size > Capacity) reserve(_grow_capacity(new_size)); Size = new_size; }
+      |                                                                                        ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src/imgui_draw.cpp:2781:19: note: in instantiation of member function 'ImVector<ImFontBuildSrcData>::resize' requested here
+ 2781 |     src_tmp_array.resize(atlas->ConfigData.Size);
+      |                   ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui.h:2095:182: note: explicitly cast the pointer to silence this warning
+ 2095 |     inline void         reserve(int new_capacity)           { if (new_capacity <= Capacity) return; T* new_data = (T*)IM_ALLOC((size_t)new_capacity * sizeof(T)); if (Data) { memcpy(new_data, Data, (size_t)Size * sizeof(T)); IM_FREE(Data); } Data = new_data; Capacity = new_capacity; }
+      |                                                                                                                                                                                      ^
+      |                                                                                                                                                                                      (void*)
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui.h:2095:182: warning: first argument in call to 'memcpy' is a pointer to non-trivially copyable type 'ImFontBuildDstData' [-Wnontrivial-memcall]
+ 2095 |     inline void         reserve(int new_capacity)           { if (new_capacity <= Capacity) return; T* new_data = (T*)IM_ALLOC((size_t)new_capacity * sizeof(T)); if (Data) { memcpy(new_data, Data, (size_t)Size * sizeof(T)); IM_FREE(Data); } Data = new_data; Capacity = new_capacity; }
+      |                                                                                                                                                                                      ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui.h:2092:88: note: in instantiation of member function 'ImVector<ImFontBuildDstData>::reserve' requested here
+ 2092 |     inline void         resize(int new_size)                { if (new_size > Capacity) reserve(_grow_capacity(new_size)); Size = new_size; }
+      |                                                                                        ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src/imgui_draw.cpp:2782:19: note: in instantiation of member function 'ImVector<ImFontBuildDstData>::resize' requested here
+ 2782 |     dst_tmp_array.resize(atlas->Fonts.Size);
+      |                   ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/imgui-src\imgui.h:2095:182: note: explicitly cast the pointer to silence this warning
+ 2095 |     inline void         reserve(int new_capacity)           { if (new_capacity <= Capacity) return; T* new_data = (T*)IM_ALLOC((size_t)new_capacity * sizeof(T)); if (Data) { memcpy(new_data, Data, (size_t)Size * sizeof(T)); IM_FREE(Data); } Data = new_data; Capacity = new_capacity; }
+      |                                                                                                                                                                                      ^
+      |                                                                                                                                                                                      (void*)
+23 warnings generated.
+[72/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/Common/DefaultLogger.cpp.obj
+[73/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/PostProcessing/ConvertToLHProcess.cpp.obj
+[74/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/PostProcessing/CalcTangentsProcess.cpp.obj
+[75/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/PostProcessing/EmbedTexturesProcess.cpp.obj
+[76/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/PostProcessing/ComputeUVMappingProcess.cpp.obj
+[77/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/PostProcessing/FindInstancesProcess.cpp.obj
+[78/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/PostProcessing/FindDegenerates.cpp.obj
+[79/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/PostProcessing/FixNormalsStep.cpp.obj
+[80/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/PostProcessing/DropFaceNormalsProcess.cpp.obj
+[81/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/Common/Exporter.cpp.obj
+[82/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/PostProcessing/GenFaceNormalsProcess.cpp.obj
+[83/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/PostProcessing/FindInvalidDataProcess.cpp.obj
+[84/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/PostProcessing/GenVertexNormalsProcess.cpp.obj
+[85/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/PostProcessing/PretransformVertices.cpp.obj
+[86/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/PostProcessing/ImproveCacheLocality.cpp.obj
+[87/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/PostProcessing/RemoveVCProcess.cpp.obj
+[88/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/PostProcessing/LimitBoneWeightsProcess.cpp.obj
+[89/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/PostProcessing/RemoveRedundantMaterials.cpp.obj
+[90/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/PostProcessing/SortByPTypeProcess.cpp.obj
+[91/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/PostProcessing/TextureTransform.cpp.obj
+[92/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/PostProcessing/SplitLargeMeshes.cpp.obj
+[93/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/PostProcessing/JoinVerticesProcess.cpp.obj
+[94/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/PostProcessing/TriangulateProcess.cpp.obj
+[95/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/PostProcessing/OptimizeMeshes.cpp.obj
+[96/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/PostProcessing/ValidateDataStructure.cpp.obj
+[97/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/PostProcessing/OptimizeGraph.cpp.obj
+[98/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/PostProcessing/GenBoundingBoxesProcess.cpp.obj
+[99/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/PostProcessing/MakeVerboseFormat.cpp.obj
+[100/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/PostProcessing/ScaleProcess.cpp.obj
+[101/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/PostProcessing/ProcessHelper.cpp.obj
+[102/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/PostProcessing/ArmaturePopulate.cpp.obj
+[103/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/PostProcessing/DeboneProcess.cpp.obj
+[104/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/STEPParser/STEPFileEncoding.cpp.obj
+[105/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/Material/MaterialSystem.cpp.obj
+[106/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/PostProcessing/SplitByBoneCountProcess.cpp.obj
+[107/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/AMF/AMFImporter_Geometry.cpp.obj
+[108/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/AMF/AMFImporter_Material.cpp.obj
+[109/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/3DS/3DSConverter.cpp.obj
+[110/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/AMF/AMFImporter_Postprocess.cpp.obj
+[111/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/Assbin/AssbinLoader.cpp.obj
+[112/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/AMF/AMFImporter.cpp.obj
+[113/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/STEPParser/STEPFileReader.cpp.obj
+[114/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/AC/ACLoader.cpp.obj
+[115/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/Collada/ColladaHelper.cpp.obj
+[116/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/3DS/3DSLoader.cpp.obj
+[117/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/B3D/B3DImporter.cpp.obj
+[118/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/ASE/ASELoader.cpp.obj
+[119/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/BVH/BVHLoader.cpp.obj
+[120/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/ASE/ASEParser.cpp.obj
+[121/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/CSM/CSMLoader.cpp.obj
+[122/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/HMP/HMPLoader.cpp.obj
+[123/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/M3D/M3DImporter.cpp.obj
+[124/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/M3D/M3DWrapper.cpp.obj
+[125/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/IQM/IQMImporter.cpp.obj
+[126/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/Irr/IRRShared.cpp.obj
+[127/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/LWO/LWOAnimation.cpp.obj
+[128/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/DXF/DXFLoader.cpp.obj
+[129/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/Irr/IRRMeshLoader.cpp.obj
+[130/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/LWO/LWOBLoader.cpp.obj
+[131/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/LWO/LWOMaterial.cpp.obj
+[132/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/Collada/ColladaLoader.cpp.obj
+[133/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/MD2/MD2Loader.cpp.obj
+[134/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/Irr/IRRLoader.cpp.obj
+[135/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/LWS/LWSLoader.cpp.obj
+[136/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/MDL/MDLMaterialLoader.cpp.obj
+[137/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/LWO/LWOLoader.cpp.obj
+[138/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/MDC/MDCLoader.cpp.obj
+[139/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/MD5/MD5Loader.cpp.obj
+[140/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/MD3/MD3Loader.cpp.obj
+[141/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/MDL/HalfLife/UniqueNameGenerator.cpp.obj
+[142/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/MD5/MD5Parser.cpp.obj
+[143/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/MDL/MDLLoader.cpp.obj
+[144/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/NDO/NDOLoader.cpp.obj
+[145/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/Collada/ColladaParser.cpp.obj
+[146/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/OFF/OFFLoader.cpp.obj
+[147/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/Obj/ObjFileImporter.cpp.obj
+[148/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/NFF/NFFLoader.cpp.obj
+[149/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/Obj/ObjFileMtlImporter.cpp.obj
+[150/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/Ogre/OgreImporter.cpp.obj
+[151/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/Obj/ObjFileParser.cpp.obj
+[152/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/MDL/HalfLife/HL1MDLLoader.cpp.obj
+[153/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/Ogre/OgreStructs.cpp.obj
+[154/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/Ogre/OgreMaterial.cpp.obj
+[155/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/Ply/PlyLoader.cpp.obj
+[156/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/Ply/PlyParser.cpp.obj
+[157/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/OpenGEX/OpenGEXImporter.cpp.obj
+[158/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/Ogre/OgreBinarySerializer.cpp.obj
+[159/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/Ogre/OgreXmlSerializer.cpp.obj
+[160/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/MS3D/MS3DLoader.cpp.obj
+[161/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/Blender/BlenderDNA.cpp.obj
+[162/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/Blender/BlenderModifier.cpp.obj
+[163/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/Blender/BlenderTessellator.cpp.obj
+[164/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/COB/COBLoader.cpp.obj
+[165/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/Blender/BlenderCustomData.cpp.obj
+[166/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/Blender/BlenderBMesh.cpp.obj
+[167/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/Blender/BlenderLoader.cpp.obj
+[168/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/IFC/IFCMaterial.cpp.obj
+[169/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/IFC/IFCReaderGen2_2x3.cpp.obj
+[170/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/IFC/IFCUtil.cpp.obj
+[171/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/IFC/IFCLoader.cpp.obj
+[172/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/IFC/IFCProfile.cpp.obj
+[173/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/IFC/IFCCurve.cpp.obj
+[174/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXImporter.cpp.obj
+[175/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/IFC/IFCGeometry.cpp.obj
+[176/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/Blender/BlenderScene.cpp.obj
+[177/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXUtil.cpp.obj
+[178/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXTokenizer.cpp.obj
+[179/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/IFC/IFCBoolean.cpp.obj
+[180/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/XGL/XGLLoader.cpp.obj
+[181/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXParser.cpp.obj
+[182/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXProperties.cpp.obj
+[183/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXModel.cpp.obj
+[184/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXMaterial.cpp.obj
+[185/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXDocument.cpp.obj
+[186/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/IFC/IFCOpenings.cpp.obj
+[187/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXAnimation.cpp.obj
+[188/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXNodeAttribute.cpp.obj
+[189/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXBinaryTokenizer.cpp.obj
+[190/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXMeshGeometry.cpp.obj
+[191/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXDeformer.cpp.obj
+[192/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXDocumentUtil.cpp.obj
+[193/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/Q3D/Q3DLoader.cpp.obj
+[194/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/Q3BSP/Q3BSPFileParser.cpp.obj
+[195/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/Terragen/TerragenLoader.cpp.obj
+[196/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/Raw/RawLoader.cpp.obj
+[197/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/STL/STLLoader.cpp.obj
+[198/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/Q3BSP/Q3BSPFileImporter.cpp.obj
+[199/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/X/XFileImporter.cpp.obj
+[200/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/SIB/SIBImporter.cpp.obj
+[201/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/Unreal/UnrealLoader.cpp.obj
+[202/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/SMD/SMDLoader.cpp.obj
+[203/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXConverter.cpp.obj
+[204/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/X/XFileParser.cpp.obj
+[205/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/X3D/X3DImporter_Geometry2D.cpp.obj
+[206/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/X3D/X3DImporter_Group.cpp.obj
+[207/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/X3D/X3DImporter.cpp.obj
+[208/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/X3D/X3DImporter_Light.cpp.obj
+[209/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/X3D/X3DImporter_Geometry3D.cpp.obj
+[210/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/X3D/X3DImporter_Metadata.cpp.obj
+[211/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/X3D/X3DImporter_Networking.cpp.obj
+[212/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/X3D/X3DImporter_Shape.cpp.obj
+[213/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/X3D/X3DImporter_Texturing.cpp.obj
+[214/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/X3D/X3DImporter_Postprocess.cpp.obj
+[215/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/IFC/IFCReaderGen1_2x3.cpp.obj
+[216/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/X3D/X3DImporter_Rendering.cpp.obj
+[217/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/glTF/glTFCommon.cpp.obj
+[218/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/X3D/X3DGeoHelper.cpp.obj
+[219/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/OpenGEX/OpenGEXExporter.cpp.obj
+[220/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/X3D/X3DXmlHelper.cpp.obj
+[221/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/3MF/D3MFImporter.cpp.obj
+[222/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/M3D/M3DExporter.cpp.obj
+[223/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/3MF/XmlSerializer.cpp.obj
+[224/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/MMD/MMDImporter.cpp.obj
+[225/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/Ply/PlyExporter.cpp.obj
+[226/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/3MF/D3MFOpcPackage.cpp.obj
+[227/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/MMD/MMDPmxParser.cpp.obj
+[228/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/Assxml/AssxmlExporter.cpp.obj
+[229/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/Obj/ObjExporter.cpp.obj
+[230/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/Assbin/AssbinExporter.cpp.obj
+[231/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/3DS/3DSExporter.cpp.obj
+[232/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/Assbin/AssbinFileWriter.cpp.obj
+[233/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/Assxml/AssxmlFileWriter.cpp.obj
+[234/278] Building C object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/Assjson/cencode.c.obj
+[235/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/STL/STLExporter.cpp.obj
+[236/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXExportProperty.cpp.obj
+[237/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXExportNode.cpp.obj
+[238/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/X/XFileExporter.cpp.obj
+[239/278] Building C object _deps/assimp-build/code/CMakeFiles/assimp.dir/__/contrib/unzip/ioapi.c.obj
+[240/278] Building C object _deps/assimp-build/code/CMakeFiles/assimp.dir/__/contrib/unzip/crypt.c.obj
+[241/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/X3D/X3DExporter.cpp.obj
+[242/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/3MF/D3MFExporter.cpp.obj
+[243/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/Assjson/mesh_splitter.cpp.obj
+[244/278] Building C object _deps/assimp-build/code/CMakeFiles/assimp.dir/__/contrib/unzip/unzip.c.obj
+[245/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/Pbrt/PbrtExporter.cpp.obj
+[246/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/Assjson/json_exporter.cpp.obj
+[247/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/Collada/ColladaExporter.cpp.obj
+[248/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep/advancing_front.cc.obj
+[249/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/common/shapes.cc.obj
+[250/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep/cdt.cc.obj
+[251/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/Step/StepExporter.cpp.obj
+[252/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep/sweep.cc.obj
+[253/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep/sweep_context.cc.obj
+[254/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/__/contrib/Open3DGC/o3dgcArithmeticCodec.cpp.obj
+In file included from D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/Open3DGC/o3dgcArithmeticCodec.cpp:74:
+In file included from D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/Open3DGC\o3dgcArithmeticCodec.h:77:
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/Open3DGC\o3dgcCommon.h:167:48: warning: first argument in call to 'memset' is a pointer to non-trivially copyable type 'o3dgc::SC3DMCStats' [-Wnontrivial-memcall]
+  167 |                                         memset(this, 0, sizeof(SC3DMCStats));
+      |                                                ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/Open3DGC\o3dgcCommon.h:167:48: note: explicitly cast the pointer to silence this warning
+  167 |                                         memset(this, 0, sizeof(SC3DMCStats));
+      |                                                ^
+      |                                                (void*)
+1 warning generated.
+[255/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/glTF/glTFImporter.cpp.obj
+In file included from D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/code/AssetLib/glTF/glTFImporter.cpp:45:
+In file included from D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/code\AssetLib/glTF/glTFAsset.h:1015:
+In file included from D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/code\AssetLib/glTF\glTFAsset.inl:52:
+In file included from D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/code/../contrib\Open3DGC/o3dgcSC3DMCDecoder.h:28:
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/code/../contrib\Open3DGC\o3dgcCommon.h:167:48: warning: first argument in call to 'memset' is a pointer to non-trivially copyable type 'o3dgc::SC3DMCStats' [-Wnontrivial-memcall]
+  167 |                                         memset(this, 0, sizeof(SC3DMCStats));
+      |                                                ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/code/../contrib\Open3DGC\o3dgcCommon.h:167:48: note: explicitly cast the pointer to silence this warning
+  167 |                                         memset(this, 0, sizeof(SC3DMCStats));
+      |                                                ^
+      |                                                (void*)
+In file included from D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/code/AssetLib/glTF/glTFImporter.cpp:45:
+In file included from D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/code\AssetLib/glTF/glTFAsset.h:1015:
+In file included from D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/code\AssetLib/glTF\glTFAsset.inl:52:
+In file included from D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/code/../contrib\Open3DGC/o3dgcSC3DMCDecoder.h:31:
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/code/../contrib\Open3DGC\o3dgcSC3DMCEncodeParams.h:38:48: warning: first argument in call to 'memset' is a pointer to non-trivially copyable type 'o3dgc::SC3DMCEncodeParams' [-Wnontrivial-memcall]
+   38 |                                         memset(this, 0, sizeof(SC3DMCEncodeParams));
+      |                                                ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/code/../contrib\Open3DGC\o3dgcSC3DMCEncodeParams.h:38:48: note: explicitly cast the pointer to silence this warning
+   38 |                                         memset(this, 0, sizeof(SC3DMCEncodeParams));
+      |                                                ^
+      |                                                (void*)
+In file included from D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/code/AssetLib/glTF/glTFImporter.cpp:45:
+In file included from D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/code\AssetLib/glTF/glTFAsset.h:1015:
+In file included from D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/code\AssetLib/glTF\glTFAsset.inl:52:
+In file included from D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/code/../contrib\Open3DGC/o3dgcSC3DMCDecoder.h:30:
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/code/../contrib\Open3DGC\o3dgcIndexedFaceSet.h:39:53: warning: first argument in call to 'memset' is a pointer to non-trivially copyable type 'o3dgc::IndexedFaceSet<unsigned short>' [-Wnontrivial-memcall]
+   39 |                                              memset(this, 0, sizeof(IndexedFaceSet));
+      |                                                     ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/code\AssetLib/glTF\glTFAsset.inl:791:40: note: in instantiation of member function 'o3dgc::IndexedFaceSet<unsigned short>::IndexedFaceSet' requested here
+  791 |     o3dgc::IndexedFaceSet<IndicesType> ifs;
+      |                                        ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/code/../contrib\Open3DGC\o3dgcIndexedFaceSet.h:39:53: note: explicitly cast the pointer to silence this warning
+   39 |                                              memset(this, 0, sizeof(IndexedFaceSet));
+      |                                                     ^
+      |                                                     (void*)
+3 warnings generated.
+[256/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/__/contrib/openddlparser/code/DDLNode.cpp.obj
+[257/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/__/contrib/Open3DGC/o3dgcTools.cpp.obj
+[258/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/__/contrib/openddlparser/code/OpenDDLCommon.cpp.obj
+[259/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/__/contrib/Open3DGC/o3dgcDynamicVectorDecoder.cpp.obj
+In file included from D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/Open3DGC/o3dgcDynamicVectorDecoder.cpp:22:
+In file included from D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/Open3DGC\o3dgcDynamicVectorDecoder.h:28:
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/Open3DGC\o3dgcCommon.h:167:48: warning: first argument in call to 'memset' is a pointer to non-trivially copyable type 'o3dgc::SC3DMCStats' [-Wnontrivial-memcall]
+  167 |                                         memset(this, 0, sizeof(SC3DMCStats));
+      |                                                ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/Open3DGC\o3dgcCommon.h:167:48: note: explicitly cast the pointer to silence this warning
+  167 |                                         memset(this, 0, sizeof(SC3DMCStats));
+      |                                                ^
+      |                                                (void*)
+1 warning generated.
+[260/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/__/contrib/Open3DGC/o3dgcDynamicVectorEncoder.cpp.obj
+In file included from D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/Open3DGC/o3dgcDynamicVectorEncoder.cpp:22:
+In file included from D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/Open3DGC\o3dgcDVEncodeParams.h:28:
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/Open3DGC\o3dgcCommon.h:167:48: warning: first argument in call to 'memset' is a pointer to non-trivially copyable type 'o3dgc::SC3DMCStats' [-Wnontrivial-memcall]
+  167 |                                         memset(this, 0, sizeof(SC3DMCStats));
+      |                                                ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/Open3DGC\o3dgcCommon.h:167:48: note: explicitly cast the pointer to silence this warning
+  167 |                                         memset(this, 0, sizeof(SC3DMCStats));
+      |                                                ^
+      |                                                (void*)
+1 warning generated.
+[261/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/__/contrib/Open3DGC/o3dgcTriangleFans.cpp.obj
+In file included from D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/Open3DGC/o3dgcTriangleFans.cpp:23:
+In file included from D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/Open3DGC\o3dgcTriangleFans.h:28:
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/Open3DGC\o3dgcCommon.h:167:48: warning: first argument in call to 'memset' is a pointer to non-trivially copyable type 'o3dgc::SC3DMCStats' [-Wnontrivial-memcall]
+  167 |                                         memset(this, 0, sizeof(SC3DMCStats));
+      |                                                ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/contrib/Open3DGC\o3dgcCommon.h:167:48: note: explicitly cast the pointer to silence this warning
+  167 |                                         memset(this, 0, sizeof(SC3DMCStats));
+      |                                                ^
+      |                                                (void*)
+1 warning generated.
+[262/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/__/contrib/openddlparser/code/Value.cpp.obj
+[263/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/__/contrib/openddlparser/code/OpenDDLStream.cpp.obj
+[264/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/__/contrib/openddlparser/code/OpenDDLExport.cpp.obj
+[265/278] Linking CXX static library imgui.lib
+[266/278] Copying compile_commands.json to source root
+[267/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/__/contrib/openddlparser/code/OpenDDLParser.cpp.obj
+[268/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/__/contrib/clipper/clipper.cpp.obj
+[269/278] Building C object _deps/assimp-build/code/CMakeFiles/assimp.dir/__/contrib/zip/src/zip.c.obj
+[270/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/glTF2/glTF2Exporter.cpp.obj
+[271/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/glTF2/glTF2Importer.cpp.obj
+[272/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXExporter.cpp.obj
+[273/278] Building CXX object CMakeFiles/V_Project.dir/src/stb_image.cpp.obj
+[274/278] Building CXX object _deps/assimp-build/code/CMakeFiles/assimp.dir/AssetLib/glTF/glTFExporter.cpp.obj
+In file included from D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/code/AssetLib/glTF/glTFExporter.cpp:46:
+In file included from D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/code\AssetLib/glTF/glTFAssetWriter.h:55:
+In file included from D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/code\AssetLib/glTF\glTFAsset.h:1015:
+In file included from D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/code\AssetLib/glTF\glTFAsset.inl:52:
+In file included from D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/code/../contrib\Open3DGC/o3dgcSC3DMCDecoder.h:28:
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/code/../contrib\Open3DGC\o3dgcCommon.h:167:48: warning: first argument in call to 'memset' is a pointer to non-trivially copyable type 'o3dgc::SC3DMCStats' [-Wnontrivial-memcall]
+  167 |                                         memset(this, 0, sizeof(SC3DMCStats));
+      |                                                ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/code/../contrib\Open3DGC\o3dgcCommon.h:167:48: note: explicitly cast the pointer to silence this warning
+  167 |                                         memset(this, 0, sizeof(SC3DMCStats));
+      |                                                ^
+      |                                                (void*)
+In file included from D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/code/AssetLib/glTF/glTFExporter.cpp:46:
+In file included from D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/code\AssetLib/glTF/glTFAssetWriter.h:55:
+In file included from D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/code\AssetLib/glTF\glTFAsset.h:1015:
+In file included from D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/code\AssetLib/glTF\glTFAsset.inl:52:
+In file included from D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/code/../contrib\Open3DGC/o3dgcSC3DMCDecoder.h:31:
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/code/../contrib\Open3DGC\o3dgcSC3DMCEncodeParams.h:38:48: warning: first argument in call to 'memset' is a pointer to non-trivially copyable type 'o3dgc::SC3DMCEncodeParams' [-Wnontrivial-memcall]
+   38 |                                         memset(this, 0, sizeof(SC3DMCEncodeParams));
+      |                                                ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/code/../contrib\Open3DGC\o3dgcSC3DMCEncodeParams.h:38:48: note: explicitly cast the pointer to silence this warning
+   38 |                                         memset(this, 0, sizeof(SC3DMCEncodeParams));
+      |                                                ^
+      |                                                (void*)
+In file included from D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/code/AssetLib/glTF/glTFExporter.cpp:46:
+In file included from D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/code\AssetLib/glTF/glTFAssetWriter.h:55:
+In file included from D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/code\AssetLib/glTF\glTFAsset.h:1015:
+In file included from D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/code\AssetLib/glTF\glTFAsset.inl:52:
+In file included from D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/code/../contrib\Open3DGC/o3dgcSC3DMCDecoder.h:30:
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/code/../contrib\Open3DGC\o3dgcIndexedFaceSet.h:39:53: warning: first argument in call to 'memset' is a pointer to non-trivially copyable type 'o3dgc::IndexedFaceSet<unsigned short>' [-Wnontrivial-memcall]
+   39 |                                              memset(this, 0, sizeof(IndexedFaceSet));
+      |                                                     ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/code\AssetLib/glTF\glTFAsset.inl:791:40: note: in instantiation of member function 'o3dgc::IndexedFaceSet<unsigned short>::IndexedFaceSet' requested here
+  791 |     o3dgc::IndexedFaceSet<IndicesType> ifs;
+      |                                        ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/code/../contrib\Open3DGC\o3dgcIndexedFaceSet.h:39:53: note: explicitly cast the pointer to silence this warning
+   39 |                                              memset(this, 0, sizeof(IndexedFaceSet));
+      |                                                     ^
+      |                                                     (void*)
+3 warnings generated.
+[275/278] Linking CXX static library assimp.lib
+[276/278] Building C object CMakeFiles/V_Project.dir/include/glad/src/glad.c.obj
+[277/278] Building CXX object CMakeFiles/V_Project.dir/src/main.cpp.obj
+In file included from D:/V_Project_Ver_1_FOR_TESTING/src/main.cpp:16:
+In file included from D:/V_Project_Ver_1_FOR_TESTING/src\animator.h:8:
+In file included from D:/V_Project_Ver_1_FOR_TESTING/src\animation.h:7:
+D:/V_Project_Ver_1_FOR_TESTING/src\bone.h:35:3: warning: field 'm_ID' will be initialized after field 'm_LocalTransform' [-Wreorder-ctor]
+   34 |                 m_Name(name),
+      |                 ~~~~~~~~~~~~
+      |                 m_LocalTransform(1.0f)
+   35 |                 m_ID(ID),
+      |                 ^~~~~~~~
+      |                 m_Name(name)
+   36 |                 m_LocalTransform(1.0f)
+      |                 ~~~~~~~~~~~~~~~~~~~~~~
+      |                 m_ID(ID)
+D:/V_Project_Ver_1_FOR_TESTING/src\bone.h:94:2: warning: non-void function does not return a value in all control paths [-Wreturn-type]
+   94 |         }
+      |         ^
+D:/V_Project_Ver_1_FOR_TESTING/src\bone.h:104:2: warning: non-void function does not return a value in all control paths [-Wreturn-type]
+  104 |         }
+      |         ^
+D:/V_Project_Ver_1_FOR_TESTING/src\bone.h:114:2: warning: non-void function does not return a value in all control paths [-Wreturn-type]
+  114 |         }
+      |         ^
+In file included from D:/V_Project_Ver_1_FOR_TESTING/src/main.cpp:16:
+In file included from D:/V_Project_Ver_1_FOR_TESTING/src\animator.h:8:
+In file included from D:/V_Project_Ver_1_FOR_TESTING/src\animation.h:10:
+D:/V_Project_Ver_1_FOR_TESTING/src\model.h:238:96: warning: unused parameter 'scene' [-Wunused-parameter]
+  238 |         void ExtractBoneWeightForVertices(std::vector<Vertex>& vertices, aiMesh* mesh, const aiScene* scene)
+      |                                                                                                       ^
+D:/V_Project_Ver_1_FOR_TESTING/src\model.h:243:37: warning: comparison of integers of different signs: 'int' and 'unsigned int' [-Wsign-compare]
+  243 |                 for (int boneIndex = 0; boneIndex < mesh->mNumBones; ++boneIndex)
+      |                                         ~~~~~~~~~ ^ ~~~~~~~~~~~~~~~
+D:/V_Project_Ver_1_FOR_TESTING/src\model.h:411:100: warning: unused parameter 'gamma' [-Wunused-parameter]
+  411 | unsigned int TextureFromFile(const char *path, const string &directory, const aiScene* scene, bool gamma)
+      |                                                                                                    ^
+In file included from D:/V_Project_Ver_1_FOR_TESTING/src/main.cpp:16:
+In file included from D:/V_Project_Ver_1_FOR_TESTING/src\animator.h:8:
+D:/V_Project_Ver_1_FOR_TESTING/src\animation.h:103:21: warning: comparison of integers of different signs: 'int' and 'const unsigned int' [-Wsign-compare]
+  103 |                 for (int i = 0; i < src->mNumChildren; i++)
+      |                                 ~ ^ ~~~~~~~~~~~~~~~~~
+D:/V_Project_Ver_1_FOR_TESTING/src/main.cpp:161:45: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+  161 | bool obstacleGrid[GRID_SIZE][GRID_SIZE] = { false };
+      |                                             ^~~~~
+      |                                             {    }
+D:/V_Project_Ver_1_FOR_TESTING/src/main.cpp:794:13: warning: enumeration value 'MUTANT_SKILL' not handled in switch [-Wswitch]
+  794 |     switch (state) {
+      |             ^~~~~
+D:/V_Project_Ver_1_FOR_TESTING/src/main.cpp:867:43: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+  867 |     bool closed[GRID_SIZE][GRID_SIZE] = { false };
+      |                                           ^~~~~
+      |                                           {    }
+D:/V_Project_Ver_1_FOR_TESTING/src/main.cpp:868:44: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+  868 |     bool openSet[GRID_SIZE][GRID_SIZE] = { false };
+      |                                            ^~~~~
+      |                                            {    }
+D:/V_Project_Ver_1_FOR_TESTING/src/main.cpp:950:44: warning: unused parameter 'window' [-Wunused-parameter]
+  950 | void framebuffer_size_callback(GLFWwindow* window, int width, int height) { glViewport(0, 0, width, height); }
+      |                                            ^
+D:/V_Project_Ver_1_FOR_TESTING/src/main.cpp:952:33: warning: unused parameter 'window' [-Wunused-parameter]
+  952 | void mouse_callback(GLFWwindow* window, double xposIn, double yposIn) {
+      |                                 ^
+D:/V_Project_Ver_1_FOR_TESTING/src/main.cpp:960:34: warning: unused parameter 'window' [-Wunused-parameter]
+  960 | void scroll_callback(GLFWwindow* window, double xoffset, double yoffset) { camera.ProcessMouseScroll(static_cast<float>(yoffset)); }
+      |                                  ^
+D:/V_Project_Ver_1_FOR_TESTING/src/main.cpp:960:49: warning: unused parameter 'xoffset' [-Wunused-parameter]
+  960 | void scroll_callback(GLFWwindow* window, double xoffset, double yoffset) { camera.ProcessMouseScroll(static_cast<float>(yoffset)); }
+      |                                                 ^
+In file included from D:/V_Project_Ver_1_FOR_TESTING/src/main.cpp:16:
+In file included from D:/V_Project_Ver_1_FOR_TESTING/src\animator.h:6:
+In file included from D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/code/../include\assimp/scene.h:53:
+In file included from D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/code/../include\assimp/types.h:65:
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/code/../include\assimp/vector3.h:86:5: warning: definition of implicit copy assignment operator for 'aiVector3t<float>' is deprecated because it has a user-declared copy constructor [-Wdeprecated-copy]
+   86 |     aiVector3t( const aiVector3t& o ) = default;
+      |     ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/code/../include\assimp/anim.h:499:18: note: in implicit copy assignment operator for 'aiVector3t<float>' first required here
+  499 |         anim_out = a + (b - a) * d;
+      |                  ^
+D:/V_Project_Ver_1_FOR_TESTING/build/_deps/assimp-src/code/../include\assimp/anim.h:526:12: note: in instantiation of member function 'Assimp::Interpolator<aiVector3t<float>>::operator()' requested here
+  526 |         ipl(out, a.mValue, b.mValue, d);
+      |            ^
+17 warnings generated.
+[278/278] Linking CXX executable V_Project.exe; Copying assets to build directory; Copying shaders to build directory

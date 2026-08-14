@@ -110,6 +110,7 @@ set(ASSIMP_BUILD_ASSIMP_TOOLS OFF CACHE BOOL "" FORCE)
 set(ASSIMP_INSTALL OFF CACHE BOOL "" FORCE)
 set(ASSIMP_BUILD_ZLIB OFF CACHE BOOL "" FORCE)
 set(ASSIMP_BUILD_ASSIMP_VIEW OFF CACHE BOOL "" FORCE)
+set(ASSIMP_WARNINGS_AS_ERRORS OFF CACHE BOOL "" FORCE) # Disable treating warnings as errors
 
 FetchContent_Declare(
     assimp
@@ -177,7 +178,7 @@ target_include_directories(V_Project PRIVATE
 # ============================================
 target_compile_options(V_Project PRIVATE
     $<$<CXX_COMPILER_ID:MSVC>:/W4 /MP>
-    $<$<NOT:$<CXX_COMPILER_ID:MSVC>>:-Wall -Wextra -Wpedantic>
+    $<$<NOT:$<CXX_COMPILER_ID:MSVC>>:-Wall -Wextra -Wno-nontrivial-memcall>
 )
 
 if(MSVC)
@@ -204,7 +205,7 @@ target_link_libraries(V_Project PRIVATE
 # ============================================
 if(WIN32)
     target_compile_definitions(V_Project PRIVATE _CRT_SECURE_NO_WARNINGS)
-    target_link_libraries(V_Project PRIVATE opengl32.lib)
+    target_link_libraries(V_Project PRIVATE opengl32.lib ws2_32.lib)
 elseif(APPLE)
     target_link_libraries(V_Project PRIVATE "-framework Cocoa" "-framework IOKit")
 elseif(UNIX)
