@@ -5,7 +5,11 @@
 </p>
 
 <p align="center">
-  <img src="assets/screenshot_placeholder.png" alt="3D Simulation Framework Preview" width="100%"/>
+  <img src="assets/login.png" alt="3D Simulation Framework Preview" width="100%"/>
+</p>
+
+<p align="center">
+  <img src="assets/main.png" alt="3D Simulation Framework Preview" width="100%"/>
 </p>
 
 <p align="center">
