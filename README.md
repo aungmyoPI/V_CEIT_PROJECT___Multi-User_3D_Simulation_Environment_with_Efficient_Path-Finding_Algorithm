@@ -1,7 +1,7 @@
 # 🧪 3D Simulation & Interaction Framework
 
 <p align="center">
-  <b>A custom real-time 3D simulation and AI interaction framework built with C++17 and OpenGL 3.3 Core.</b>
+  <b>A custom real-time 3D simulation and NPC AI interaction framework built with C++17 and OpenGL 3.3 Core.</b>
 </p>
 
 <p align="center">
@@ -27,9 +27,9 @@
 
 ## 📖 Overview
 
-**3D Simulation & Interaction Framework** is a custom-built real-time 3D graphics and AI engineering project developed in **C++17** with **OpenGL 3.3 Core Profile**.
+**3D Simulation & Interaction Framework** is a custom-built real-time 3D graphics and NPC AI engineering project developed in **C++17** with **OpenGL 3.3 Core Profile**.
 
-Rather than being a conventional game project, the application serves as a **graphics and AI engineering testbed** for experimenting with rendering architecture, high-density scene rendering, real-time agent navigation, skeletal animation, networking, and persistent application state.
+Rather than being a conventional game project, the application serves as a **graphics and NPC AI engineering testbed** for experimenting with rendering architecture, high-density scene rendering, real-time agent navigation, skeletal animation, networking, and persistent application state.
 
 The framework combines several systems that are commonly found in modern interactive applications:
 
@@ -38,12 +38,12 @@ The framework combines several systems that are commonly found in modern interac
 - **Distance-based culling** for high-density scenes
 - Hardware-assisted **skeletal animation**
 - Grid-based **A* pathfinding**
-- Finite-state AI behavior
+- Finite-state NPC AI behavior
 - **TCP client-server communication** through Winsock2
 - Asynchronous state persistence using **MongoDB**
 - Dear ImGui authentication and development interfaces
 
-> **Engineering Focus:** Although the project uses game-oriented assets such as characters and trees, its primary purpose is to explore **real-time rendering performance, AI navigation, system integration, and network persistence**.
+> **Engineering Focus:** Although the project uses game-oriented assets such as characters and trees, its primary purpose is to explore **real-time rendering performance, NPC AI navigation, system integration, and network persistence**.
 
 ---
 
@@ -110,9 +110,9 @@ Characters use a skeletal animation system capable of handling multiple animatio
 
 Animation data is evaluated at runtime and applied through GPU skinning during rendering.
 
-### 🤖 A* Pathfinding AI
+### 🤖 A* Pathfinding NPC AI
 
-AI agents use grid-based **A\*** navigation to move through environments containing static obstacles.
+NPC AI agents use grid-based **A\*** navigation to move through environments containing static obstacles.
 
 The system is designed to allow agents to:
 
@@ -266,7 +266,7 @@ The project is organized around several interacting subsystems:
              ▼                 ▼                 ▼
       ┌────────────┐    ┌────────────┐    ┌────────────┐
       │ Rendering  │    │ Simulation │    │    Input   │
-      │  Pipeline  │    │  & AI      │    │  & UI      │
+      │  Pipeline  │    │  & NPC AI      │    │  & UI      │
       └─────┬──────┘    └─────┬──────┘    └────────────┘
             │                 │
             ▼                 ▼
@@ -327,7 +327,7 @@ This project was built around several practical graphics-programming and systems
 - Handling very high scene-object counts
 - Combining skeletal animation with real-time rendering
 
-### AI & Simulation
+### NPC AI & Simulation
 
 - Implementing grid-based A* navigation
 - Handling obstacle-aware agent movement
@@ -402,7 +402,7 @@ Technological University (Mandalay)
 
 **Project:** 3D Simulation & Interaction Framework  
 **Project Type:** CEIT Project  
-**Focus Areas:** Real-Time Rendering, AI, Simulation & Networking  
+**Focus Areas:** Real-Time Rendering, NPC AI, Simulation & Networking  
 **Institution:** Technological University (Mandalay)
 
 ---
@@ -416,5 +416,5 @@ Third-party libraries, models, textures, animations, and other assets remain sub
 ---
 
 <p align="center">
-  <i>Built as a graphics, AI, and systems-engineering project at Technological University (Mandalay).</i>
+  <i>Built as a graphics, NPC AI, and systems-engineering project at Technological University (Mandalay).</i>
 </p>
