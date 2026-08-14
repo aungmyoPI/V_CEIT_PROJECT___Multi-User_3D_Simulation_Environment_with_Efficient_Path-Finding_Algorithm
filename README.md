@@ -377,6 +377,12 @@ Potential areas for benchmarking include:
 
 ---
 
+### Supervisor
+
+**Dr. Thandar Soe, Professor**  
+Department of Computer Engineering and Information Technology  
+Technological University (Mandalay)
+
 ## 👥 Project Team
 
 | Name | Role | Primary Contribution |
@@ -387,12 +393,6 @@ Potential areas for benchmarking include:
 | **Ma Thoon Thiri Swe** | Developer | Finite State Machine (FSM) Logic Design |
 | **Mg Nay Phone Myint** | Contributor | Documentation & Testing Support |
 | **Mg Kaung Khant Ko Ko** | Contributor | Documentation & Testing Support |
-
-### Supervisor
-
-**Dr. Thandar Soe, Professor**  
-Department of Computer Engineering and Information Technology  
-Technological University (Mandalay)
 
 ---
 
