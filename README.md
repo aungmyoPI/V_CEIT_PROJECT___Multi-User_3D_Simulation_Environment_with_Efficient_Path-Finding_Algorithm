@@ -12,6 +12,8 @@
   <img src="assets/main.png" alt="3D Simulation Framework Preview" width="100%"/>
 </p>
 
+---
+
 <p align="center">
   <img src="https://img.shields.io/badge/Language-C%2B%2B17-blue.svg" alt="C++17">
   <img src="https://img.shields.io/badge/Graphics-OpenGL%203.3-green.svg" alt="OpenGL 3.3">
