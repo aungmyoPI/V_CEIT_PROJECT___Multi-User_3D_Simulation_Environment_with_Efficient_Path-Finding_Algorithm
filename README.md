@@ -199,9 +199,9 @@ The project uses CMake `FetchContent` to obtain external dependencies where conf
 
 ## 🚀 Building & Running
 
-### Windows
+### Windows / Linux
 
-The project currently targets a Windows environment for its Winsock2 networking component.
+The project currently targets Windows/Linux environment.
 
 Configure with Ninja:
 
